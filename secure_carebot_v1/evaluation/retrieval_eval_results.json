@@ -1,0 +1,1454 @@
+[
+    {
+        "test_case_id": "1",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Symptoms",
+        "query": "What symptoms is the patient P00012 currently presenting with in visit V0000013?",
+        "expected_answer": "The clinical presentation includes extreme hunger (polyphagia), frequent urination (polyuria), unintentional weight loss, and the presence of fruity smelling breath indicative of ketosis.",
+        "expected_chunks": [
+            "P00012_visit_symptoms_V0000013"
+        ],
+        "actual_answer": "**Patient P00012 presents with the following clinical markers during visit V0000013: **extreme hunger, frequent urination, unintentional weight loss, and a fruity-smelling breath. These symptoms suggest hyperglycemia commonly associated with diabetes mellit=/type 2 or poorly controlled type 1 diabetes.\n\n**CONDITIONAL TREATMENT ADVICE: **Consider initiating an assessment for glycaemic control, potentially starting on a regimen of insulin therapy and monitoring HbA1c levels to guide treatment adjustments if the patient is diagnosed with diabetes.\n",
+        "target_chunks": [
+            "P00012_visit_symptoms_V0000013"
+        ],
+        "time_taken_ms": 144494.72,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.611,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "2",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Medications",
+        "query": "List the current medications for patient P00011 in visit V0000013.",
+        "expected_answer": "The current treatment regimen consists of Metformin 1000mg, an increased dose of Insulin Injection, and Atorvastatin 10mg for lipid management.",
+        "expected_chunks": [
+            "P00011_visit_medication_V0000013"
+        ],
+        "actual_answer": "**Patient P00011 | visit_medication V0000013: Metformin 1000mg, Insulin Injection (Increased Dose), Atorvastatin 10mg.**  \nNo additional treatment advice provided as no specific request was made for adjustments or new medications beyond the current regimen details given in context.",
+        "target_chunks": [
+            "P00011_visit_medication_V0000013"
+        ],
+        "time_taken_ms": 122612.32,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "High",
+        "answer_fact_score": 0.8,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "3",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Diagnostics",
+        "query": "What were the findings of the thyroid ultrasound for patient P00013 in visit V0000014?",
+        "expected_answer": "The ultrasound imaging revealed a diffuse heterogeneous thyroid texture and significant thyroid enlargement, both of which are highly suggestive of Hashimoto's Thyroiditis.",
+        "expected_chunks": [
+            "P00013_visit_scan_reports_V0000014"
+        ],
+        "actual_answer": "**Patient P00013 presents with diffuse heterogeneous thyroid texture indicative of Hashimoto's Thyroiditis in visit V0000014 MRI Scan reports, correlating to symptoms such as extreme fatigue and puffiness. Current medication includes Levothyroxine 50mcg for suspected hypothyroidism with thyroid enlargement noted. Blood report from 27-11-2021 shows normal HbA1c of **5.4%**, suggesting no current concern regarding diabetes management; creatinine is within the healthy range at **0.8 mg/dL** indicating good kidney function. Overview from 11-04-2025 reveals a BP reading of **118/78 mmHg**, sugar level stable at **95 mg/dL** with weight and height measurements suggesting normal body mass index (BMI). Pulse rate is regular at **58 bpm**; temperature remains within the standard range.\n\nConsidering Hashimoto's Thyroiditis diagnosis alongside symptoms, it may be beneficial to monitor thyroid function closely with potential adjustments in Levothyroxine dosage if hypothyroidism progresses or does not improve under current treatment regimen.",
+        "target_chunks": [
+            "P00013_visit_scan_reports_V0000014",
+            "P00013_visit_medication_V0000014",
+            "P00013_profile_risk",
+            "P00013_visit_symptoms_V0000014",
+            "P00013_visit_blood_report_V0000014",
+            "P00013_visit_overview_V0000014"
+        ],
+        "time_taken_ms": 196810.57,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "extracted_patient_name": [
+            "V0000014"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.467,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "4",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "History",
+        "query": "Does patient P00011 have any known allergies or hereditary conditions?",
+        "expected_answer": "The medical record indicates a known allergy to Penicillin and a significant hereditary predisposition to Type 2 Diabetes.",
+        "expected_chunks": [
+            "P00011_profile_risk"
+        ],
+        "actual_answer": "**Patient P00011 Profile Summary:** The patient exhibits a known allergy to **Penicillin**, with an elevated profile of diabetes mellitus type II risk factors such as family history and lifestyle. No additional hereditary conditions or allergies have been documented in the current medical records for P00011.\n\n**Conditional Treatment Advice:** Not applicable at this time due to no specific medication requests; however, monitoring blood glucose levels is recommended given diabetes risk factors and considering lifestyle modifications as preventive measures against Type 2 Diabetes onset.",
+        "target_chunks": [
+            "P00011_profile_risk"
+        ],
+        "time_taken_ms": 119902.69,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.667,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "5",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Vitals/Labs",
+        "query": "What was the recorded HbA1c level for patient P00012 in visit V0000013?",
+        "expected_answer": "The laboratory blood report for visit V0000013 shows an HbA1c level of 10.1, indicating poor glycemic control.",
+        "expected_chunks": [
+            "P00012_visit_blood_report_V0000013"
+        ],
+        "actual_answer": "**P00012's blood test from visit V0000013 shows an elevated **HbA1c level at 10.1%**, indicating poor glycemic control over the past few months and a potential need for adjustment in diabetes management strategy. The creatinine value of **1.3 mg/dL** suggests possible renal function impairment which may influence medication choices or dosages.\n\nConsidering these findings, it would be advisable to evaluate the patient's current antidiabetic regimen and potentially initiate a more aggressive treatment plan such as **Metformin 500mg** alongside lifestyle interventions aimed at improving glycemic control. Renal function should also prompt consideration of medications with lower nephrotoxic risk profiles or adjustments in dosing to prevent further renal compromise.\n\n",
+        "target_chunks": [
+            "P00012_visit_blood_report_V0000013"
+        ],
+        "time_taken_ms": 137262.3,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "High",
+        "answer_fact_score": 0.857,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "6",
+        "category": "Fact Extraction",
+        "complexity": "Medium",
+        "domain": "Diagnostics",
+        "query": "What is the diagnosis for patient P00013 based on the symptoms and scans in visit V0000014?",
+        "expected_answer": "The patient is diagnosed with Hashimoto's Thyroiditis, supported by symptoms of memory loss and fatigue alongside MRI findings of diffuse heterogeneous thyroid texture.",
+        "expected_chunks": [
+            "P00013_visit_symptoms_V0000014",
+            "P00013_visit_scan_reports_V0000014"
+        ],
+        "actual_answer": "P00013 exhibits **diffuse heterogeneous thyroid texture** indicative of **Hashimoto's Thyroiditis** with symptoms suggesting **hypothyroidism** and evidence of **thyroid enlargement** from MRI Scan reports in visit V0000014.\n\nFor treatment, considering the diagnosis: Initiate a trial of synthetic thyroxine (L-T4) at an appropriate starting dose based on weight, typically 50-100 mcg daily; monitor TSH levels and adjust dosage accordingly to achieve euthyroid state.\n",
+        "target_chunks": [
+            "P00013_visit_scan_reports_V0000014"
+        ],
+        "time_taken_ms": 127276.26,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "extracted_patient_name": [
+            "V0000014"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.533,
+        "chunk_accuracy": "Partial",
+        "chunk_score": 0.5
+    },
+    {
+        "test_case_id": "7",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Vitals/Labs",
+        "query": "What are the vital signs recorded for patient P00011 in visit V0000013?",
+        "expected_answer": "The vitals recorded are BP 150/95, sugar level of 235 mg/dL, weight of 81 kg, pulse rate of 92 bpm, and a body temperature of 98.8\u00b0F.",
+        "expected_chunks": [
+            "P00011_visit_overview_V0000013"
+        ],
+        "actual_answer": "**Blood Pressure (BP):** **150/95 mmHg**  \n**Glucose Levels:** **235 mg/dL**  \n**Weight:** **81 kg**  \n**Height:** **171 cm**  \n**Heart Rate (Pulse):** **92 bpm**  \n**Temperature:** **98.8\u00b0F**  \nPatient P00011 exhibits elevated blood pressure and high glucose levels indicative of poorly controlled hypertension and hyperglycemia, potentially requiring medication adjustment or initiation for better management. Consider evaluating the patient's current antihypertensive regimen to address BP control; additionally, assessing glycemic targets may necessitate a diabetes treatment review possibly involving **Metformin** titration based on renal function and tolerance.\n\n",
+        "target_chunks": [
+            "P00011_visit_overview_V0000013",
+            "P00011_visit_symptoms_V0000013"
+        ],
+        "time_taken_ms": 153042.58,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.688,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "8",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Symptoms",
+        "query": "Identify the symptoms reported by patient P00011 during visit V0000013.",
+        "expected_answer": "The patient reported persistent extreme thirst, worsening blurred vision, numbness in lower extremities, and a non-healing foot ulcer located on the left heel.",
+        "expected_chunks": [
+            "P00011_visit_symptoms_V0000013"
+        ],
+        "actual_answer": "**Patient P00011 reports severe dehydration symptoms including **persistent extreme thirst**; visual disturbanfiles such as **blurred vision** are observed, alongside neurological manifestations like **numbness in lower extremities**. A notable dermatological concern is a non-healing foot ulcer located on the left heel indicating possible diabetic complications or peripheral vascular disease.\n\nConsidering these symptoms suggest potential uncontrolled hyperglycemia, initiating **Metformin 500mg** twice daily could be beneficial after confirming renal function is adequate for medication initiation and adjustments based on glucose monitoring results are made.",
+        "target_chunks": [
+            "P00011_visit_symptoms_V0000013"
+        ],
+        "time_taken_ms": 147325.28,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "High",
+        "answer_fact_score": 0.882,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "9",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Medications",
+        "query": "What medications was patient P00012 previously taking in visit V0000012?",
+        "expected_answer": "The historical medication record for visit V0000012 shows that the patient was taking Metformin.",
+        "expected_chunks": [
+            "P00012_history_prev_medication_V0000012"
+        ],
+        "actual_answer": "**Patient P00012 was previously taking **Metformin** as part of their treatment regimen during visit V0000012. No additional clinical markers or comparative patient data provided for further synthesis at this time.\n\nPermission not given.",
+        "target_chunks": [
+            "P00012_history_prev_medication_V0000012"
+        ],
+        "time_taken_ms": 113635.4,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000012"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.333,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "10",
+        "category": "Fact Extraction",
+        "complexity": "Low",
+        "domain": "Diagnostics",
+        "query": "What scan was performed on patient P00012 to evaluate the liver in visit V0000013?",
+        "expected_answer": "An MRI scan was performed which provided evidence of moderate Non-Alcoholic Fatty Liver Disease (NAFLD).",
+        "expected_chunks": [
+            "P00012_visit_scan_reports_V0000013"
+        ],
+        "actual_answer": "**Patient P00012 underwent an MRI to assess liver condition during visit V0000013, revealing moderate Non-Alcoholic Fatty Liver Disease in a diabetic patient. No specific medications or treatment protocols provided for this context summary.\n\n**No additional treatments suggested due to lack of detailed clinical data and explicit request parameters.",
+        "target_chunks": [
+            "P00012_visit_scan_reports_V0000013",
+            "P00012_history_overview_V0000012"
+        ],
+        "time_taken_ms": 123110.6,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.615,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "11",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "History",
+        "query": "Summarize the history and diagnosis for patient P00012 as of visit V0000012.",
+        "expected_answer": "The patient was diagnosed with Type 1 Diabetes Mellitus involving early ketoacidosis and fatty liver; management included insulin therapy, metformin, and a controlled carbohydrate diet.",
+        "expected_chunks": [
+            "P00012_history_diagnosis_V0000012",
+            "P00012_history_treatment_V0000012"
+        ],
+        "actual_answer": "**Patient P00012 has a history diagnosis indicating Type 1 Diabetes Mellitus presenting early signs of ketoacidosis and fatty liver involvement as per visit V0000012. Current clinical markers include **BP 135/85**, sugar level at **210 mg/dL**, weight recorded at **77 kg**, height of **161 cm**, and a pulse rate of **89 bpm** with body temperature stable at **98.7\u00b0F**.\n\nFor treatment consideration: Given the patient's Type 1 Diabetes MellitInstanceDiagnosisMedicationProtocol(insulin therapy initiation) is recommended to manage blood glucose levels effectively, alongside monitoring for ketoacidosis and fatty liver progression. Regular follow-ups should be scheduled to adjust insulin dosages as needed based on continuous glucose monitoring results.\n",
+        "target_chunks": [
+            "P00012_history_diagnosis_V0000012",
+            "P00012_history_treatment_V0000012"
+        ],
+        "time_taken_ms": 158295.45,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000012"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.556,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "12",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "Diagnostics",
+        "query": "Summarize the eye health status for patient P00011 based on visit V0000013.",
+        "expected_answer": "The MRI scan indicates moderate non-proliferative diabetic retinopathy and increased macular edema, consistent with the patient's report of worsening blurred vision.",
+        "expected_chunks": [
+            "P00011_visit_scan_reports_V0000013"
+        ],
+        "actual_answer": "P00011 exhibits signs of **moderate non-proliferative diabetic retinopathy** with an increase in **macular edema**, as evidenced by recent visit V0000013. The patient's history suggests a progression likely due to their underlying condition of diabetes mellitus.\n\nConsidering the clinical findings and assuming no contraindications or allergies are present: **Initiate Intravitreal Anti-VEGF therapy**, such as Lucentis (bevacizumab) at an appropriate dosage per ophthalmologist's recommendation.\n",
+        "target_chunks": [
+            "P00011_visit_scan_reports_V0000013",
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012"
+        ],
+        "time_taken_ms": 129750.84,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.438,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "13",
+        "category": "Summarisation",
+        "complexity": "Low",
+        "domain": "Symptoms",
+        "query": "Summarize the symptoms presented by patient P00013 in visit V0000014.",
+        "expected_answer": "The clinical presentation involves extreme fatigue, constipation, a puffy face, thinning eyebrows, and noticeable memory loss.",
+        "expected_chunks": [
+            "P00013_visit_symptoms_V0000014"
+        ],
+        "actual_answer": "**Patient P00013 presents with the following clinical markers during visit V0000014: **extreme fatigue, constipation, puffy face, thinning eyebrows, and memory loss. No medications or treatment protocols have been provided in this context for synthesis into a summary of symptoms alone.\n\n**No specific treatments are suggested due to the absence of detailed medical records beyond reported symptoms. Further evaluation may be required to determine appropriate interventions based on underlying conditions associated with these clinical markers, such as hypothyroidism or neurological disorders. Permission not given for any PII-related requests at this time.**\n\n",
+        "target_chunks": [
+            "P00013_visit_symptoms_V0000014"
+        ],
+        "time_taken_ms": 127697.29,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "extracted_patient_name": [
+            "V0000014"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.769,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "14",
+        "category": "Summarisation",
+        "complexity": "High",
+        "domain": "History",
+        "query": "Summarize the diabetes management progression for patient P00011.",
+        "expected_answer": "Management progressed from Metformin and lifestyle changes in V0000011 to a strict low carbohydrate diet in V0000012, eventually requiring increased Insulin and Metformin 1000mg by V0000013.",
+        "expected_chunks": [
+            "P00011_history_treatment_V0000011",
+            "P00011_history_treatment_V0000012",
+            "P00011_visit_medication_V0000013"
+        ],
+        "actual_answer": "P00011 has a history of poorly controlled Type 2 Diabetes Mellitus, presenting early peripheral neuropathy in V0000011 and Uncontrolled diabetes with Peripheral Arterial Disease by April 2025. Clinical markers include **BP 140/90** on March 15, escalating to **BP 145/92** in early April; sugar levels rising from 210 mg/dL to a concerning 220 mg/dL. The patient's weight is stable at around 83 kg with minor fluctuations, and height remains consistent at 171 cm. Pulse rate increased slightly but temperature remained within normal range (98\u00b0F).\n\nConsidering the progression of diabetes management for **P00011**: Initiate a comprehensive review including potential adjustment to current antidiabetic therapy, possibly introducing or optimizing doses such as Metformin. Monitor blood pressure closely and consider antihypertensive medication if lifestyle modifications fail; additionally, evaluate for statins due to the presence of peripheral arterial disease risk factors.\n",
+        "target_chunks": [
+            "P00011_history_diagnosis_V0000011",
+            "P00011_history_diagnosis_V0000012",
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012"
+        ],
+        "time_taken_ms": 185830.34,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.333,
+        "chunk_accuracy": "None",
+        "chunk_score": 0.0
+    },
+    {
+        "test_case_id": "15",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "Diagnostics",
+        "query": "Summarize the cardiac findings for patient P00019 in visit V0000020.",
+        "expected_answer": "Imaging shows cardiomegaly and pulmonary edema on X-ray, with a cardiac MRI confirming reduced ejection fraction and myocardial scarring.",
+        "expected_chunks": [
+            "P00019_visit_scan_reports_V0000020"
+        ],
+        "actual_answer": "**Patient P00019 presents XRay findings of cardiomegaly and pulmonary edema alongside a **Cardiac MRI indicating reduced ejection fraction with myocardial scarring**, suggesting chronic heart failure symptoms. The clinical picture points towards compromised left ventricular function necessitating close monitoring and potential pharmacological intervention to manage cardiac output and reduce fluid accumulation.\n\nConsidering the diagnosis of reduced ejection fraction with myocardial scarring, **Ace Inhibitors** or **Beta Blockers** may be initiated for their proven benefits in heart failure management; dosages should start low (e.g., ACE-Inhibitor 5mg daily) and titrate based on tolerance and blood pressure response.\n",
+        "target_chunks": [
+            "P00019_visit_scan_reports_V0000020"
+        ],
+        "time_taken_ms": 145251.8,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00019"
+        ],
+        "extracted_patient_name": [
+            "V0000020"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.714,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "16",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Summarize the latest laboratory results for patient P00018 in visit V0000019.",
+        "expected_answer": "The blood report indicates an HbA1c level of 5.4 and an elevated creatinine level of 2.6, which points toward significant renal impairment.",
+        "expected_chunks": [
+            "P00018_visit_blood_report_V0000019"
+        ],
+        "actual_answer": "**HbA1c level is at a normal range (5.4%) indicating good blood sugar control over the past few months, while **creatinine levels are elevated (2.6) suggesting impaired kidney function which may require further investigation and potential treatment adjustments for renal health preservation.\n\nConsidering creatinine level concerns: Evaluate patient's current medication regimen to identify any nephrotoxic agents, consider consult with a nephrologist if necessary, potentially initiating **ACE inhibitors or ARB** after assessment of renal function and blood pressure.\n",
+        "target_chunks": [
+            "P00018_visit_blood_report_V0000019"
+        ],
+        "time_taken_ms": 137408.1,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00018"
+        ],
+        "extracted_patient_name": [
+            "V0000019"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.625,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "17",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "Diagnostics",
+        "query": "Summarize the cardiac findings for patient P00020 in visit V0000021.",
+        "expected_answer": "The chest X-ray findings include pulmonary edema and an enlarged cardiac silhouette, assessed within the context of heart failure.",
+        "expected_chunks": [
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "actual_answer": "**Patient P00020 exhibits signs consistent with heart failure as evidenced by pulmonary edema and an enlarged cardiac silhouette on Chest X-ray, V0000021 scan reports. No additional clinical data is available at this time to further contextualize the patient's condition or history of treatment.\n\n**No specific medications, dosages, or treatments can be advised without more detailed information on current management and individual health statuses.",
+        "target_chunks": [
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "time_taken_ms": 132158.84,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00020"
+        ],
+        "extracted_patient_name": [
+            "V0000021"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.643,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "18",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "Symptoms",
+        "query": "Summarize the symptoms and hereditary risks for patient P00021 in visit V0000022.",
+        "expected_answer": "Symptoms include leg pain while walking and yellow patches on eyelids, with a known hereditary risk for high cholesterol.",
+        "expected_chunks": [
+            "P00021_visit_symptoms_V0000022",
+            "P00021_profile_risk"
+        ],
+        "actual_answer": "**Patient P00021 presents with intermittent leg pain upon ambulation, likely indicative of peripheral arterial disease (PAD). Additionally, there are visible **yellow patches on the patient's eyelids.** No further medical history provided in this context to suggest hereditary risks or specific treatment protocol at present time.\n\nNo medication suggestions can be made without additional clinical data regarding diagnosis and current treatments for PAD, as well as potential underlying causes of the yellowish discoloration on eyelids which could range from benign conditions to more serious dermatological issues requiring further investigation before treatment initiation.",
+        "target_chunks": [
+            "P00021_profile_risk",
+            "P00021_visit_symptoms_V0000022"
+        ],
+        "time_taken_ms": 128895.63,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00021"
+        ],
+        "extracted_patient_name": [
+            "V0000022"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.467,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "19",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Summarize the vital signs for patient P00016 in visit V0000017.",
+        "expected_answer": "The patient recorded a BP of 165/102, sugar level of 115, weight of 90 lbs, and a high pulse rate of 100 bpm.",
+        "expected_chunks": [
+            "P00016_visit_overview_V0000017"
+        ],
+        "actual_answer": "**Patient P00016 presents with a current blood pressure (BP) reading of **165/102**, elevated sugar level at **115 mg/dL**, weight recorded as **90 lbs**, pulse rate measured at **100 bpm** and temperature stable at **98.5\u00b0F** on visit V0000017 dated 12-04-2025. Previous records indicate episodes of chest pain, confusion, and shortness of breath noted during the same date in a prior visit (V0000016).\n\nConsidering elevated BP and previous cardiac symptoms: **Lisinopril 10mg daily** may be initiated for hypertension management. For hyperglycemia, assessment of current diabetes treatment is recommended; potential adjustments or initiation such as **Metformin titration based on HbA1c levels** could follow after further evaluation.\n",
+        "target_chunks": [
+            "P00016_visit_blood_report_V0000017",
+            "P00016_visit_overview_V0000017"
+        ],
+        "time_taken_ms": 149324.76,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00016"
+        ],
+        "extracted_patient_name": [
+            "V0000017"
+        ],
+        "answer_accuracy": "High",
+        "answer_fact_score": 0.929,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "20",
+        "category": "Summarisation",
+        "complexity": "Medium",
+        "domain": "Symptoms",
+        "query": "Summarize the symptoms for patient P00017 in visit V0000018.",
+        "expected_answer": "The patient is experiencing swollen ankles, persistent skin itching, and a significant loss of appetite.",
+        "expected_chunks": [
+            "P00017_visit_symptoms_V0000018"
+        ],
+        "actual_answer": "**Patient P00017 exhibits symptoms including swollen ankles, persistent itching, and loss of appetite. No additional medical history or treatment details provided in the current context. **\n\nNo specific medications or dosages are suggested due to insufficient data for a targeted condition analysis.",
+        "target_chunks": [
+            "P00017_visit_symptoms_V0000018"
+        ],
+        "time_taken_ms": 126848.47,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00017"
+        ],
+        "extracted_patient_name": [
+            "V0000018"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.667,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "21",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare blood pressure and sugar levels for P00011 and P00012 in their V0000013 visits.",
+        "expected_answer": "P00011 has a higher BP (150/95) compared to P00012 (138/88), but P00012 has a higher sugar level (245) than P00011 (235).",
+        "expected_chunks": [
+            "P00011_visit_overview_V0000013",
+            "P00012_visit_overview_V0000013"
+        ],
+        "actual_answer": "**Patient P00011 (Visit V0000013): BP 150/95, HbA1c likely above normal range due to persistent symptoms indicative of uncontrolled diabetes. Weight increased from previous visit; height remains stable at **171 cm**.\n\nPatient P00012 (Visit V0000013): BP 138/88, high sugar level (**Sugar Level: 245 mg/dL**) with symptoms suggesting hyperglycemia; weight stable at **75 kg**.\n\nFor P00011, consider initiating a diabetes management protocol including potential initiation of insulin therapy and monitoring HbA1c levels for glycemic control adjustments. For P00012, lifestyle interventions to address hyperglycemia symptoms are recommended alongside reevaluation in 4 weeks; if no improvement consider **Metformin** initiation at a starting dose of **500mg once daily** with potential titration based on tolerance and blood sugar levels.\n",
+        "target_chunks": [
+            "P00012_visit_overview_V0000013",
+            "P00012_history_overview_V0000012",
+            "P00011_history_overview_V0000011",
+            "P00011_visit_symptoms_V0000013",
+            "P00011_visit_overview_V0000013",
+            "P00011_history_overview_V0000012",
+            "P00012_visit_symptoms_V0000013",
+            "P00011_history_symptoms_V0000012",
+            "P00012_history_symptoms_V0000012",
+            "P00011_history_symptoms_V0000011"
+        ],
+        "time_taken_ms": 194885.56,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011",
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.6,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "22",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Medications",
+        "query": "Compare thyroid medication for P00013 (V0000014) and P00014 (V0000015).",
+        "expected_answer": "Both patients take Levothyroxine; however, P00013 has a specified dose of 50mcg, while the dose for P00014 is not specified.",
+        "expected_chunks": [
+            "P00013_visit_medication_V0000014",
+            "P00014_visit_medication_V0000015"
+        ],
+        "actual_answer": "No medical records found.\n\n**Medications and treatment protocols not available due to lack of data. Permission not given for any PII requests. For a detailed comparison or individualized advice, please provide the necessary clinical information on thyroid medication usage between patients with IDs P00013 (V0000014) and P00014 (V0000015).\n",
+        "target_chunks": [],
+        "time_taken_ms": 116364.3,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00014",
+            "P00013"
+        ],
+        "extracted_patient_name": [
+            "V0000014",
+            "V0000015"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.333,
+        "chunk_accuracy": "None",
+        "chunk_score": 0.0
+    },
+    {
+        "test_case_id": "23",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare the creatinine levels for P00017 (V0000018) and P00018 (V0000019).",
+        "expected_answer": "The creatinine level for P00018 is 2.6, which is higher than the 2.2 level recorded for P00017.",
+        "expected_chunks": [
+            "P00017_visit_blood_report_V0000018",
+            "P00018_visit_blood_report_V0000019"
+        ],
+        "actual_answer": "**P00017 (HbA1c **5.7%**, Creatinine **2.2 mg/dL**) - No significant abnormalities noted; patient's blood glucose and renal function appear within normal ranges for their clinical history as of 10-04-2025.\n\n**P00018 (HbA1c **5.4%**, Creatinine **2.6 mg/dL**) - Elevated creatinine level compared to P00017; may indicate a decline in renal function since 03-15-2023 and requires monitoring or potential intervention if trend continues.\n\n*Conditional Treatment Advice: For patient **P00018**, consider initiating hydration therapy to support kidney function while closely tracking creatinine levels for further management decisions.* ",
+        "target_chunks": [
+            "P00017_visit_blood_report_V0000018",
+            "P00018_visit_blood_report_V0000019"
+        ],
+        "time_taken_ms": 153484.74,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00017",
+            "P00018"
+        ],
+        "extracted_patient_name": [
+            "V0000018",
+            "V0000019"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.545,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "24",
+        "category": "Comparison",
+        "complexity": "High",
+        "domain": "Diagnostics",
+        "query": "Contrast the cardiac scan findings for P00019 (V0000020) and P00020 (V0000021).",
+        "expected_answer": "P00019 shows reduced ejection fraction and myocardial scarring on MRI, while P00020 shows an enlarged cardiac silhouette on X-ray.",
+        "expected_chunks": [
+            "P00019_visit_scan_reports_V0000020",
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "actual_answer": "**P00019 (V0000020): Cardiomegaly and pulmonary edema observed; Reduced ejection fraction with myocardial scarring noted on MRI, indicative of chronic heart failure. No additional treatment details provided in the context.\n\n**P00020 (V0000021): Chest X-ray reveals pulmonary edema and an enlarged cardiac silhouette; clinical assessment suggests Heart failure, similar to P00019 but without further treatment specifics. \n\n**CONDITIONAL TREATMENT ADVICE: For both patients with heart failure symptoms indicative of reduced ejection fraction and myocardial scarring or pulmonary edema, consider initiating **ACE inhibitors (e.g., Lisinopril) at a starting dose such as 5 mg daily** to manage blood pressure and reduce cardiac workload; additionally, diuretics like Furosemide may be prescribed for pulmonary edema management if not contraind-icated by renal function.\n",
+        "target_chunks": [
+            "P00019_visit_scan_reports_V0000020",
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "time_taken_ms": 177133.42,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00020",
+            "P00019"
+        ],
+        "extracted_patient_name": [
+            "V0000020",
+            "V0000021"
+        ],
+        "answer_accuracy": "High",
+        "answer_fact_score": 0.857,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "25",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Symptoms",
+        "query": "Contrast the symptoms for P00021 (V0000022) and P00022 (V0000023).",
+        "expected_answer": "P00021 presents with leg pain and yellow eyelid patches, whereas P00022 shows fatty lumps near joints and Arcus senilis around the iris.",
+        "expected_chunks": [
+            "P00021_visit_symptoms_V0000022",
+            "P00022_visit_symptoms_V0000023"
+        ],
+        "actual_answer": "**Leg pain during walking, Yellow eyelid patches (P00021) vs. Fatty lumps near joints, Arcus senilis (P00022). No direct medication or treatment protocol requested for comparison summary; hence no specific recommendations provided herein.\n\n",
+        "target_chunks": [
+            "P00021_visit_symptoms_V0000022",
+            "P00021_history_symptoms_V0000021",
+            "P00022_history_symptoms_V0000022",
+            "P00022_visit_symptoms_V0000023"
+        ],
+        "time_taken_ms": 125163.02,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00022",
+            "P00021"
+        ],
+        "extracted_patient_name": [
+            "V0000023",
+            "V0000022"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.722,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "26",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare HbA1c results for P00015 (V0000016) and P00016 (V0000017).",
+        "expected_answer": "P00016 has a slightly higher HbA1c of 5.8 compared to the 5.6 level recorded for P00015.",
+        "expected_chunks": [
+            "P00015_visit_blood_report_V0000016",
+            "P00016_visit_blood_report_V0000017"
+        ],
+        "actual_answer": "**Patient P00015 (V0000016) - Status: Normal glycemic control with an **HbA1c of 5.6%** and a normal creatinine level at 1.  \n**Patient P00016 (V0000017) - Status: Slight elevation in HbA1c to **5.8%, with an increased creatinine level of 1.1%.**\n\nNo medications or treatment protocols requested; therefore, no conditional advice provided for these patients at this time.",
+        "target_chunks": [
+            "P00015_visit_blood_report_V0000016",
+            "P00016_visit_blood_report_V0000017"
+        ],
+        "time_taken_ms": 41085.62,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00016",
+            "P00015"
+        ],
+        "extracted_patient_name": [
+            "V0000016",
+            "V0000017"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.538,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "27",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare the weights for P00017 (V0000018) and P00022 (V0000023).",
+        "expected_answer": "P00017 weighs 76 lbs, while P00022 weighs significantly more at 83 kg.",
+        "expected_chunks": [
+            "P00017_visit_overview_V0000018",
+            "P00022_visit_overview_V0000023"
+        ],
+        "actual_answer": "**Patient P00017 (V0000018):** Weight is **76 lbs**; BP at **150/90 mmHg**, sugar level of **120 mg/dL**.  \n**Patient P00022 (V0000023):** Weight recorded as **83 kg** or approximately 182 lbs; BP at a lower rate of **132/84 mmHg**, sugar level is slightly reduced to **102 mg/dL**.\n\nFor P00017: Considering the elevated blood pressure and high glucose levels alongside their weight status (which may indicate obesity), initiating a treatment plan that includes antihypertensive medication such as ACE inhibitors, along with lifestyle modifications for diabetes management is advisable.\nFor P00022: The patient's blood pressure and glucose levels are relatively better controlled but still warrant monitoring; maintaining current treatment while reinforcing a healthy weight through nutrition counseling could be beneficial to prevent progression of hypertension or diabetes.\n",
+        "target_chunks": [
+            "P00017_visit_overview_V0000018",
+            "P00022_history_overview_V0000022",
+            "P00022_visit_overview_V0000023"
+        ],
+        "time_taken_ms": 67234.1,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00022",
+            "P00017"
+        ],
+        "extracted_patient_name": [
+            "V0000023",
+            "V0000018"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.667,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "28",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare heart rates (pulse) for P00013 (V0000014) and P00014 (V0000015).",
+        "expected_answer": "P00013 has a pulse of 58 bpm, which is slightly higher than the 56 bpm pulse recorded for P00014.",
+        "expected_chunks": [
+            "P00013_visit_overview_V0000014",
+            "P00014_visit_overview_V0000015"
+        ],
+        "actual_answer": "**P00014 (V0000015) - Current Status & History:** Patient exhibits a blood pressure reading within the normal range at **BP 115/75**, with an optimal sugar level of **92 mg/dL**. The patient's weight is recorded as healthy for their height (**80 lbs / Height not provided**), and has a resting pulse rate of **56 bpm** at body temperature of 97.7\u00b0F, indicating no fever or distress signs from the data available.\n\n**P00013 (V0000014) - Current Status & History:** This patient shows a slightly elevated blood pressure reading **BP 118/78** and has an acceptable sugar level of **95 mg/dL**, suggesting good glucose control. The weight is lower at **68 lbs / Height not provided** with the pulse rate marginally higher than P00014's reading at \n\n**Pulse Rate Comparison:** Patient from V0000015 has a resting heartbeat of **56 bpm**, while patient from V0000014 presents with a pulse rate slightly higher at **58 beats per minute**.\n\nNo specific medications or treatment protocols requested; therefore no conditional advice provided for these patients based on the current contextual data available.",
+        "target_chunks": [
+            "P00014_visit_overview_V0000015",
+            "P00013_visit_overview_V0000014"
+        ],
+        "time_taken_ms": 76787.5,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00014",
+            "P00013"
+        ],
+        "extracted_patient_name": [
+            "V0000015",
+            "V0000014"
+        ],
+        "answer_accuracy": "High",
+        "answer_fact_score": 0.846,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "29",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "History",
+        "query": "Compare the hereditary risks for P00011 and P00012.",
+        "expected_answer": "Both patients are at risk for Diabetes; however, P00011 is specific to Type 2 Diabetes, while P00012 has a generalized hereditary link to Diabetes.",
+        "expected_chunks": [
+            "P00011_profile_risk",
+            "P00012_profile_risk"
+        ],
+        "actual_answer": "**Patient P00011 presents with symptoms indicative of advanced Type 2 Diabetes, including persistent extreme thirst, vision blurring, numbness in lower extremities, and a non-healing foot ulcer on the left heel. The patient has been managing diabetes through Metformin but requires an intensified treatment approach due to symptom progression.\n\n**Patient P00012 is diagnosed with Type 1 Diabetes Mellitus, exhibiting early signs of ketoacidosis and fatty liver involvement; they are currently on Insulin therapy alongside Metformin but may benefit from a reassessment to optimize glycemic control.\n\n**For P00011: Consider initiating **Intensive insulin regimen or GLP-1 agonists, avoiding Penicillin due to allergy; monitor for signs of diabetic complications closely and reassess the efficacy of Metformin in light of symptom severity.\n**For P00012: Continue Insulin therapy while evaluating potential adjustments or additions, such as **Dapagliflozin 5 mg/day for improved glycemic control and to address fatty liver condition; ensure Sulfa-free medication options due to allergies.\n",
+        "target_chunks": [
+            "P00012_profile_risk",
+            "P00011_profile_risk",
+            "P00012_history_symptoms_V0000012",
+            "P00011_history_symptoms_V0000011",
+            "P00012_history_prev_medication_V0000012",
+            "P00012_history_diagnosis_V0000012",
+            "P00011_visit_symptoms_V0000013",
+            "P00011_history_treatment_V0000012",
+            "P00011_history_prev_medication_V0000011",
+            "P00012_visit_medication_V0000013"
+        ],
+        "time_taken_ms": 77004.97,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011",
+            "P00012"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.5,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "30",
+        "category": "Comparison",
+        "complexity": "Medium",
+        "domain": "Medications",
+        "query": "Compare medications for P00015 (V0000016) and P00016 (V0000017).",
+        "expected_answer": "P00015 takes Amlodipine and Losartan, whereas P00016 is only prescribed Losartan.",
+        "expected_chunks": [
+            "P00015_visit_medication_V0000016",
+            "P00016_visit_medication_V0000017"
+        ],
+        "actual_answer": "**Patient P00015 (V0000016) is on amlodipine and losartan, indicating a treatment plan for hypertension or possibly heart failure management. Patient P00016 (V0000017), similarly prescribed with **losartan** alone, may have been diagnosed earlier in the course of their condition where amlodipine was not required but still requires blood pressure control and potential renal protection benefits from losartan.\n\nFor comparative treatment advice: \n- Patient P00015 could consider **adding a calcium channel blocker like amlodipine** for additional BP management if their current regimen is not sufficiently controlling blood pressure, potentially considering dosage adjustments based on tolerance and efficacy.\n- For patient P00016, maintaining the losartan therapy should be continued; however, regular monitoring of kidney function may help to determine any need for additional medication or dose modification in response to renal status changes over time.",
+        "target_chunks": [
+            "P00015_visit_medication_V0000016",
+            "P00016_visit_medication_V0000017"
+        ],
+        "time_taken_ms": 59530.54,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00016",
+            "P00015"
+        ],
+        "extracted_patient_name": [
+            "V0000016",
+            "V0000017"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.625,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "31",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "Diagnostics",
+        "query": "Was a CT scan performed for P00011 during visit V0000013?",
+        "expected_answer": "No, an MRI scan was performed for the eyes, which showed diabetic retinopathy and macular edema.",
+        "expected_chunks": [
+            "P00011_visit_scan_reports_V0000013"
+        ],
+        "actual_answer": "P00011 exhibits moderate non-proliferative diabetic retinopathy with increased macular edema, as indicated by the MRI scan during visit V0000013. The patient's blood report shows an elevated HbA1c of **9.5%** and a creatinine level at 1.2 mg/dL suggesting suboptimal glycemic control and potential kidney involvement, with BP recorded as **150/95 mmHg**, sugar levels peaking at **235 mg/dL**, weight of **81 kg** on a height of 171 cm. Symptoms include persistent extreme thirst, vision blurring and worsening, numbness in lower extremities, alongside a non-healing foot ulcer indicating possible diabetic neuropathy or peripheral vascular disease. Current medications are Metformin at **1000mg** dosage, an increased dose of Insulin Injection for glycemic control, and Atorvastatin 10 mg to manage cholesterol levels; however, considering the patient's elevated HbA1c level, a reassessment of diabetes management may be warr-anted.\n\nConsidering treatment protocol adjustments: **Increase Metformin dosage** or add an additional antidiabetic agent such as GLP-1 agonist to improve glycemic control; review Insulin regimen for possible dose optimization, and consider adding a statin with higher potency like Atorvastatin 20 mg if not contraindicate.\n",
+        "target_chunks": [
+            "P00011_visit_scan_reports_V0000013",
+            "P00011_history_treatment_V0000012",
+            "P00011_visit_blood_report_V0000013",
+            "P00011_visit_medication_V0000013",
+            "P00011_visit_symptoms_V0000013",
+            "P00011_history_symptoms_V0000011",
+            "P00011_history_prev_medication_V0000011",
+            "P00011_history_overview_V0000011",
+            "P00011_visit_overview_V0000013",
+            "P00011_profile_risk"
+        ],
+        "time_taken_ms": 90172.0,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.636,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "32",
+        "category": "Verification",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Did P00013 undergo a TSH lab test in visit V0000014?",
+        "expected_answer": "No, the blood report for visit V0000014 only lists results for HbA1c and Creatinine.",
+        "expected_chunks": [
+            "P00013_visit_blood_report_V0000014"
+        ],
+        "actual_answer": "**Patient P00013 exhibits symptoms consistent with Hashimoto's Thyroiditis including fatigue, constipation, puffiness around the face, thinning eyebrows, and memory loss during visit V0000014. MRI findings suggest diffuse thyroid enlargement indicative of hypothyroidism for which they are currently on Levothyroxine 50mcg as per their current medication list from the same date (27-11-2021). Bloodwork shows normal HbA1c and creatinine levels, with a BP reading within healthy range.**\n\n*If considering treatment adjustments for hypothyroidism: Evaluate thyroid function tests to determine if Levothyroxine dosage needs modification.* ",
+        "target_chunks": [
+            "P00013_visit_medication_V0000014",
+            "P00013_visit_scan_reports_V0000014",
+            "P00013_visit_symptoms_V0000014",
+            "P00013_profile_risk",
+            "P00013_visit_blood_report_V0000014",
+            "P00013_visit_overview_V0000014"
+        ],
+        "time_taken_ms": 52930.87,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "extracted_patient_name": [
+            "V0000014"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.4,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "33",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "History",
+        "query": "Does P00015 have any known drug allergies?",
+        "expected_answer": "No, the patient profile indicates no known drug allergies.",
+        "expected_chunks": [
+            "P00015_profile_risk"
+        ],
+        "actual_answer": "**Patient Profile P00015 indicates a risk for hypertension, with **no known drug allergies reported** in the medical records provided. Given this patient's profile and predisposition without contraind-indications from allergy history, standard antihypertensive therapy may be considered upon clinical evaluation.\n\nIf treatment is required: Consider initiating a low dose of **lisinopril 10mg** daily to manage blood pressure effectively while monitoring for any adverse reactions due to the hereditary risk factors present in this patient's profile.",
+        "target_chunks": [
+            "P00015_profile_risk"
+        ],
+        "time_taken_ms": 38266.59,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00015"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "High",
+        "answer_fact_score": 1.0,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "34",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "Symptoms",
+        "query": "Was chest pain reported by P00016 in visit V0000017?",
+        "expected_answer": "Yes, the patient reported chest pain alongside confusion and shortness of breath.",
+        "expected_chunks": [
+            "P00016_visit_symptoms_V0000017"
+        ],
+        "actual_answer": "**Patient P00016 presents with symptoms including **chest pain**, **confusion**, and **shortness of breath** during visit V0000017 on date 05-23-2024. No additional medications or treatment protocols provided in the context summary for this patient's condition.\n\n*Conditional Treatment Advice: Not applicable due to lack of specific medical data.*\n\n",
+        "target_chunks": [
+            "P00016_visit_symptoms_V0000017"
+        ],
+        "time_taken_ms": 34765.39,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00016"
+        ],
+        "extracted_patient_name": [
+            "V0000017"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.625,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "35",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "Vitals/Labs",
+        "query": "Is the weight for P00012 recorded as 75 kg in visit V0000013?",
+        "expected_answer": "Yes, the weight was recorded as 75 kg during that visit.",
+        "expected_chunks": [
+            "P00012_visit_overview_V0000013"
+        ],
+        "actual_answer": "**Patient Profile for P00012 (Visit V0000013):** Patient exhibits a blood pressure reading of **138/88 mmHg**, elevated sugar levels at **245 mg/dL**, and weighs 75 kg. Height is recorded as 161 cm with a pulse rate of **92 bpm** and temperature noted to be slightly high at **99.1\u00b0F**.\n\n*Conditional Treatment Advice:* Given the patient's elevated blood pressure, consider initiating antihypertensive therapy such as ACE inhibitors or calcium channel blockers after evaluating for contraind- ican factors and ensuring adequate hydration status. The high sugar level suggests a need to assess glycemic control measures; starting on **Metformin** may be appropriate, with dosage adjustments based upon renal function tests results.\n\n",
+        "target_chunks": [
+            "P00012_visit_overview_V0000013",
+            "P00012_history_overview_V0000012"
+        ],
+        "time_taken_ms": 55184.25,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.333,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "36",
+        "category": "Verification",
+        "complexity": "Medium",
+        "domain": "Medications",
+        "query": "Was P00021 taking Atorvastatin during visit V0000021?",
+        "expected_answer": "No, the previous medication record for visit V0000021 shows only lifestyle modification.",
+        "expected_chunks": [
+            "P00021_history_prev_medication_V0000021"
+        ],
+        "actual_answer": "**Patient P00021 was previously advised on lifestyle modifications during visit V0000021. No medication history is provided in the context given. **  \nNo specific treatment advice can be offered without additional clinical data or a request for alternative treatments based on current guidelines and patient status. ",
+        "target_chunks": [
+            "P00021_history_prev_medication_V0000021"
+        ],
+        "time_taken_ms": 32751.12,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00021"
+        ],
+        "extracted_patient_name": [
+            "V0000021"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.333,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "37",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "Medications",
+        "query": "Is P00019 currently prescribed ACE Inhibitors?",
+        "expected_answer": "No, the current medications are Furosemide and a Beta Blocker.",
+        "expected_chunks": [
+            "P00019_visit_medication_V0000020"
+        ],
+        "actual_answer": "P00019 is currently on **Furosemide** and a **Beta Blocker** as part of their medication regimen. No specific dosages are provided in the context summary.\n\nCONDITIONAL TREATMENT ADVICE: If further information regarding P00019's condition or response to current treatment is needed, consider tailoring adjustments such as evaluating **Furosemide** efficacy and considering dose modification if necessary for blood pressure control alongside the Beta Blocker.\n",
+        "target_chunks": [
+            "P00019_visit_medication_V0000020"
+        ],
+        "time_taken_ms": 40448.15,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00019"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "High",
+        "answer_fact_score": 0.8,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "38",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "Symptoms",
+        "query": "Were swollen ankles reported for P00017 in visit V0000018?",
+        "expected_answer": "Yes, symptoms included swollen ankles, persistent itching, and loss of appetite.",
+        "expected_chunks": [
+            "P00017_visit_symptoms_V0000018"
+        ],
+        "actual_answer": "No medical records found.\n\nPermission not given for any PII request due to the absence of data.\n",
+        "target_chunks": [],
+        "time_taken_ms": 24116.84,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00017"
+        ],
+        "extracted_patient_name": [
+            "V0000018"
+        ],
+        "answer_accuracy": "None",
+        "answer_fact_score": 0.0,
+        "chunk_accuracy": "None",
+        "chunk_score": 0.0
+    },
+    {
+        "test_case_id": "39",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "Diagnostics",
+        "query": "Does the X-ray for P00020 show pulmonary edema?",
+        "expected_answer": "Yes, the Chest X-ray showed pulmonary edema along with an enlarged cardiac silhouette.",
+        "expected_chunks": [
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "actual_answer": "**Chest X-ray indicates Pulmonary Edema & Enlarged Cardiac Silhouette; Clinical Indication for Heart Failure Assessment - P00020**  \nNo further patient history provided in scan reports.\n\n*CONDITIONAL TREATMENT ADVICE: Consider initiating diuretics such as **Furosemide 40mg once daily** and evaluating for ACE inhibitors like **Enalapril 5mg twice a day**, pending further clinical evaluation.*\n\n",
+        "target_chunks": [
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "time_taken_ms": 41739.01,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00020"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.7,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "40",
+        "category": "Verification",
+        "complexity": "Low",
+        "domain": "History",
+        "query": "Is P00014 allergic to dust?",
+        "expected_answer": "Yes, the patient's profile risk indicates an allergy to dust.",
+        "expected_chunks": [
+            "P00014_profile_risk"
+        ],
+        "actual_answer": "**Patient P00014 exhibits a history of allergy to **dust**, alongside genetic predisposition for conditions such as **thyroid disease**. No specific medications or treatment protocols provided in the context summary regarding these allergies and hereditary diseases. \n\n*Conditional Treatment Advice: Not applicable due to lack of detailed clinical data.*\n\nNo additional patient profiles were mentioned for comparative analysis, nor was there a request for specific medications or dosages related to the dust allergy condition in this context summary.",
+        "target_chunks": [
+            "P00014_profile_risk"
+        ],
+        "time_taken_ms": 38314.6,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00014"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.333,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "41",
+        "category": "Trend Analysis",
+        "complexity": "High",
+        "domain": "Vitals/Labs",
+        "query": "Analyze the weight trend for P00011 across V0000011, V0000012, and V0000013.",
+        "expected_answer": "The weight shows a declining trend, starting at 83 kg in V0000011, dropping to 82 lbs in V0000012, and reaching 81 kg by V0000013.",
+        "expected_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012",
+            "P00011_visit_overview_V0000013"
+        ],
+        "actual_answer": "**P00011 Weight Trend Analysis Across Visits V0000011 to V0000013:**  \nPatient P00011 exhibited a weight decrease from **83 kg** at visit V0000011 (15-03-2025) to 81 kg by the time of visit V0000013 (15-05-2025).\n\n**Conditional Treatment Advice:**  \nGiven rising blood pressure and elevated sugar levels, consider initiating **lisinopril 10mg daily** for hypertension management. For hyperglycemia control, a possible addition of **Metformin 500mg twice daily** could be beneficial after evaluating renal function to avoid lactic acidosis risk associated with metformin use in patients at higher weight and potentially compromised kidney health.\n",
+        "target_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012",
+            "P00011_visit_overview_V0000013"
+        ],
+        "time_taken_ms": 59200.98,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000013",
+            "V0000012",
+            "V0000011"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.357,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "42",
+        "category": "Trend Analysis",
+        "complexity": "High",
+        "domain": "Vitals/Labs",
+        "query": "Describe the sugar level trend for P00011 across the last three visits.",
+        "expected_answer": "There is a consistent upward trend in sugar levels: 210 mg/dL in V0000011, 220 in V0000012, and 235 mg/dL in V0000013.",
+        "expected_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012",
+            "P00011_visit_overview_V0000013"
+        ],
+        "actual_answer": "P00011 exhibits a history of poorly controlled type 2 diabetes mellitus and early peripheral neuropathy with an HbA1c level rising from **9.5%** to indicate suboptimal glycemic control across recent visits, including the latest at V0000013 where creatinine levels are stable but still elevated (**Creatinine 1.2 mg/dL**). Given this trend and associated complications such as peripheral arterial disease (PAD), a comprehensive treatment approach is warrDirent, potentially including **Metformin adjustment or addition of GLP-1 receptor agonists like Liraglutide 0.6 mg daily** to improve glycemic control and address PAD symptoms while monitoring renal function closely due to the creatinine level indicating possible nephropathy risk.\n\n",
+        "target_chunks": [
+            "P00011_visit_blood_report_V0000013",
+            "P00011_history_diagnosis_V0000011",
+            "P00011_history_diagnosis_V0000012"
+        ],
+        "time_taken_ms": 55566.8,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.167,
+        "chunk_accuracy": "None",
+        "chunk_score": 0.0
+    },
+    {
+        "test_case_id": "43",
+        "category": "Trend Analysis",
+        "complexity": "Medium",
+        "domain": "Medications",
+        "query": "How has Metformin dosage changed for P00011?",
+        "expected_answer": "The dose was increased from 500mg in visit V0000012 to 1000mg in visit V0000013.",
+        "expected_chunks": [
+            "P00011_history_prev_medication_V0000012",
+            "P00011_visit_medication_V0000013"
+        ],
+        "actual_answer": "**Patient P00011 Profile Risk Assessment:** The patient exhibits a heightened predisposition towards developing **Type 2 Diabetes**, compounded by an allergy to **Penicillin** which necessitates careful medication selection. No current treatment protocols or dosage adjustments are noted in the provided context for P00011's diabetic risk management.\n\n*Conditional Treatment Advice: Given the patient\u2019s allergy and high-risk status, a preventive approach with **Metformin** could be considered to mitigate Type 2 Diabetes onset; however, specific dosage adjustments are not provided in this context.*\n",
+        "target_chunks": [
+            "P00011_visit_medication_V0000013"
+        ],
+        "time_taken_ms": 43944.81,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [],
+        "answer_accuracy": "None",
+        "answer_fact_score": 0.0,
+        "chunk_accuracy": "Partial",
+        "chunk_score": 0.5
+    },
+    {
+        "test_case_id": "44",
+        "category": "Trend Analysis",
+        "complexity": "High",
+        "domain": "Vitals/Labs",
+        "query": "Analyze BP trend for P00011 from V0000011, V0000012 to V0000013.",
+        "expected_answer": "The blood pressure shows a steady increase over time: 140/90 in V0000011, 145/92 in V0000012, and 150/95 in V0000013.",
+        "expected_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012",
+            "P00011_visit_overview_V0000013"
+        ],
+        "actual_answer": "**P00011's Blood Pressure (BP) Trend Analysis: BP increased from **140/90** to **150/95** over three months, indicating a worsening hypertensive condition. Sugar levels also rose progressively from 210 mg/dL to 235 mg/dL alongside weight loss (from 83 kg to 81 kg). Pulse rate and temperature remained relatively stable within normal ranges (**98\u00b0F**- **98.8\u00b0F**, pulse rates between **88 bpm** - **92 bpm**), suggesting no acute distress or fever episodes during this period.\n\nConsidering the escalating trend in both BP and sugar levels without significant fluctuations in vital signs: \n- For hypertension, initiate a dual therapy with an ACE inhibitor like **Lisinopril** (start at low dose such as 10 mg daily) alongside lifestyle modifications. Monitor BP closely and adjust dosage accordingly to maintain target levels below **140/90 mmHg**.\n- For hyperglycemia, consider starting a hypoglycemic agent like **Metformin** (initial dose of 500 mg twice daily), assessing for efficacy at follow-up visits and adjustments based on HbA1c levels to achieve glycemic control.\n",
+        "target_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012",
+            "P00011_visit_overview_V0000013"
+        ],
+        "time_taken_ms": 79445.13,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000013",
+            "V0000012",
+            "V0000011"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.5,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "45",
+        "category": "Trend Analysis",
+        "complexity": "Medium",
+        "domain": "Symptoms",
+        "query": "How have foot symptoms for P00011 progressed since visit V0000012?",
+        "expected_answer": "Symptoms worsened from a tingling sensation and slow healing in V0000012 to a non-healing foot ulcer on the left heel by V0000013.",
+        "expected_chunks": [
+            "P00011_history_symptoms_V0000012",
+            "P00011_visit_symptoms_V0000013"
+        ],
+        "actual_answer": "**Patient P00011 exhibits persistent polyuria, polydipsia, peripheral neuropathy symptoms including a **tingling sensation in the extremities**, particularly noted around feet, and slow-healing foot ulcers. These clinical manifestations suggest progression of underlying diabetic complications since visit V0000012.\n\nConsidering these findings for P00011: **Initiate a comprehensive review to optimize glycemic control, potentially starting with an adjustment in antidiabetic medication such as increasing the dose of current Metformin or adding another agent like DPP-4 inhibitor.**\n",
+        "target_chunks": [
+            "P00011_history_symptoms_V0000012",
+            "P00011_visit_symptoms_V0000013",
+            "P00011_history_symptoms_V0000011"
+        ],
+        "time_taken_ms": 44175.03,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "extracted_patient_name": [
+            "V0000012"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.429,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "46",
+        "category": "Trend Analysis",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare P00021 weight recorded in V0000021 and V0000022.",
+        "expected_answer": "The weight decreased slightly from 86 kg in visit V0000021 to 85 kg in visit V0000022.",
+        "expected_chunks": [
+            "P00021_history_overview_V0000021",
+            "P00021_visit_overview_V0000022"
+        ],
+        "actual_answer": "**Patient P00021 has shown a slight decrease in blood pressure (from **BP 138/86 to BP 135/85**), sugar level (**Sugar Level from 102 mg/dL to 100 mg/dL**), and weight (**Weight reduced from 86 kg to 85 kg**). Pulse has marginally decreased (from **Pulse of 84 bpm to 82 bpm**) while temperature remains stable at approximately normal range around **98.6\u00b0F** between visits on 10-03-2025 and 12-04-2025, indicating no fever or significant fluctuations in body heat regulation during this period.\n\nNo medication adjustments are suggested based solely on the provided data; however, continued monitoring of blood pressure is advised to ensure it remains within target range for patient's condition and age group. If further treatment modifications become necessary due to persistent hypertension or hyperglycemia, consider initiating **Metformin** at a conservative starting dose such as 500mg daily after evaluating renal function and glycaemic control needs for each patient individually.\n",
+        "target_chunks": [
+            "P00021_history_overview_V0000021",
+            "P00021_visit_overview_V0000022"
+        ],
+        "time_taken_ms": 69547.41,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00021"
+        ],
+        "extracted_patient_name": [
+            "V0000022",
+            "V0000021"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.625,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    },
+    {
+        "test_case_id": "47",
+        "category": "Trend Analysis",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Analyze the blood pressure trend for P00012 between V0000012 and V0000013.",
+        "expected_answer": "There was a slight upward trend, moving from 135/85 in visit V0000012 to 138/88 in visit V0000013.",
+        "expected_chunks": [
+            "P00012_history_overview_V0000012",
+            "P00012_visit_overview_V0000013"
+        ],
+        "actual_answer": "**P00012's Clinical Summary:** The patient presents with a history blood pressure (BP) reading at **135/85 mmHg**, elevated sugar levels (**glucose level of 210 mg/dL**), and recent lab results showing an HbA1c value of **10.1%** indicating poor glycemic control over the past three months along with a creatinine level at **1.3 mg/dL** suggesting possible kidney function impairment.\n\n**Conditional Treatment Advice:** Considering P00012's elevated HbA1c and BP, initiating an antihypertensive such as lisinopril at a starting dose of **5 mg daily** may be appropriate alongside the introduction of metformin for glycemic control. Monitor kidney function closely due to creatinine levels indicating potential nephropathy; adjustments in medication dosages might become necessary based on renal clearance capacity.\n\n",
+        "target_chunks": [
+            "P00012_history_overview_V0000012",
+            "P00012_visit_blood_report_V0000013"
+        ],
+        "time_taken_ms": 60610.77,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013",
+            "V0000012"
+        ],
+        "answer_accuracy": "Low",
+        "answer_fact_score": 0.167,
+        "chunk_accuracy": "Partial",
+        "chunk_score": 0.5
+    },
+    {
+        "test_case_id": "48",
+        "category": "Trend Analysis",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare the sugar levels for P00012 between V0000012 and V0000013.",
+        "expected_answer": "The sugar level increased significantly from 210 mg/dL in visit V0000012 to 245 mg/dL in visit V0000013.",
+        "expected_chunks": [
+            "P00012_history_overview_V0000012",
+            "P00012_visit_overview_V0000013"
+        ],
+        "actual_answer": "**P00012's Clinical Summary V0000012 & V0000013 Comparison:**  \nPatient P00012 exhibits a high blood sugar level of **210 mg/dL (V0000012) vs. HbA1c 10.1% (V0000013), indicating poor glycemic control**; BP is stable at both visits, with a slight decrease from **135/85 to an unmentioned value in V0000013** and creatinine levels have risen slightly.\n\n**Conditional Treatment Advice:**  \nFor P00012's elevated HbA1c, consider initiating **Metformin 500mg twice daily with a titration plan based on tolerance and renal function monitoring due to the creatinine level of 1.3 mg/dL**; lifestyle modifications should also be reinforced alongside pharmacotherapy for optimal glycemic control management.\n",
+        "target_chunks": [
+            "P00012_history_overview_V0000012",
+            "P00012_visit_blood_report_V0000013"
+        ],
+        "time_taken_ms": 65690.41,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013",
+            "V0000012"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.556,
+        "chunk_accuracy": "Partial",
+        "chunk_score": 0.5
+    },
+    {
+        "test_case_id": "49",
+        "category": "Trend Analysis",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "How has the pulse rate for P00016 changed in visit V0000017?",
+        "expected_answer": "The pulse rate reached a high of 100 bpm during that visit.",
+        "expected_chunks": [
+            "P00016_visit_overview_V0000017"
+        ],
+        "actual_answer": "No medical records found.\n\nPermission not given for PII details or treatment suggestions due to lack of data.\n",
+        "target_chunks": [],
+        "time_taken_ms": 23600.49,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00016"
+        ],
+        "extracted_patient_name": [
+            "V0000017"
+        ],
+        "answer_accuracy": "None",
+        "answer_fact_score": 0.0,
+        "chunk_accuracy": "None",
+        "chunk_score": 0.0
+    },
+    {
+        "test_case_id": "50",
+        "category": "Trend Analysis",
+        "complexity": "Medium",
+        "domain": "Vitals/Labs",
+        "query": "Compare HbA1c for P00011 and P00012 based on V0000013.",
+        "expected_answer": "P00012 has a higher HbA1c of 10.1 compared to the 9.5 level recorded for P00011.",
+        "expected_chunks": [
+            "P00011_visit_blood_report_V0000013",
+            "P00012_visit_blood_report_V0000013"
+        ],
+        "actual_answer": "**P00011 shows an elevated HbA1c at **9.5%**, indicating suboptimal glycemic control potentially requiring intervention; Creatinine is within normal range but should be monitored for renal function trends.  \n**P00012 exhibits a higher level of concern with an increased HbA1c at **10.1%**, suggesting more aggressive management may be necessary to prevent complications; Creatinine is slightly elevated but stable compared to P00011's levels.\n\nConsidering the differences in glycemic control:  \n- For P00011, initiating **Metformin 500mg** twice daily could be a starting point for improving HbA1c values while monitoring renal function closely due to creatinine levels.\n- In the case of P00012 with an even higher HbA1c and stable but elevated creatinine, **Metformin 500mg** twice daily alongside a review for potential addition of insulin therapy should be considered after further assessment to manage diabetes more effectively.\n",
+        "target_chunks": [
+            "P00011_visit_blood_report_V0000013",
+            "P00012_visit_blood_report_V0000013",
+            "P00011_history_diagnosis_V0000012",
+            "P00012_history_diagnosis_V0000012",
+            "P00011_history_diagnosis_V0000011"
+        ],
+        "time_taken_ms": 65343.73,
+        "worked": "Yes",
+        "extracted_patient_id": [
+            "P00011",
+            "P00012"
+        ],
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "answer_accuracy": "Medium",
+        "answer_fact_score": 0.75,
+        "chunk_accuracy": "Exact",
+        "chunk_score": 1.0
+    }
+]

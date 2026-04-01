@@ -1,0 +1,656 @@
+[
+    {
+        "chunk_id": "P00011_profile_identity",
+        "patient_id": "P00011",
+        "chunk_type": "profile_identity",
+        "text": "P00011 | profile_identity. Patient ID: P00011, Name: Arun Kumar, DOB: 14-05-1986, Address: Anna Nagar West, Chennai, Tamilnadu, India- 600040, Phone: +919841023456, Email: arunkumar@gmail.com."
+    },
+    {
+        "chunk_id": "P00011_profile_risk",
+        "patient_id": "P00011",
+        "chunk_type": "profile_risk",
+        "text": "P00011 | profile_risk. Patient has allergies to Penicillin and is at risk for Type 2 Diabetes."
+    },
+    {
+        "chunk_id": "P00011_visit_overview_V0000013",
+        "patient_id": "P00011",
+        "chunk_type": "visit_overview_V0000013",
+        "text": "[Patient ID: P00011 | Visit ID: V0000013 | Date: 15-05-2025] Patient has BP of 150/95, sugar level of 235 mg/dL, weight of 81 kg, and height of 171 cm. Pulse rate is 92 bpm, with a temperature of 98.8\u00b0F."
+    },
+    {
+        "chunk_id": "P00011_visit_symptoms_V0000013",
+        "patient_id": "P00011",
+        "chunk_type": "visit_symptoms_V0000013",
+        "text": "P00011 | visit_symptoms_V0000013. Patient has symptoms of persistent extreme thirst, vision blurring and worsening, numbness in lower extremities, and non-healing foot ulcer on the left heel."
+    },
+    {
+        "chunk_id": "P00011_visit_medication_V0000013",
+        "patient_id": "P00011",
+        "chunk_type": "visit_medication_V0000013",
+        "text": "P00011 | visit_medication_V0000013. Patient is currently taking Metformin 1000mg, Insulin Injection (Increased Dose), and Atorvastatin 10mg."
+    },
+    {
+        "chunk_id": "P00011_visit_blood_report_V0000013",
+        "patient_id": "P00011",
+        "chunk_type": "visit_blood_report_V0000013",
+        "text": "Header: [P00011 | visit_blood_report_V0000013]\nData: {\"Patient ID\": \"P00011\", \"Visit ID\": \"V0000013\", \"Blood Report\": {\"HbA1c\": 9.5, \"Creatinine\": 1.2}}"
+    },
+    {
+        "chunk_id": "P00011_visit_scan_reports_V0000013",
+        "patient_id": "P00011",
+        "chunk_type": "visit_scan_reports_V0000013",
+        "text": "P00011 | visit_scan_reports_V0000013. Scan reports indicate worsening blurred vision in a diabetic patient, with moderate non-proliferative diabetic retinopathy and increased macular edema on MRI scan."
+    },
+    {
+        "chunk_id": "P00011_history_overview_V0000012",
+        "patient_id": "P00011",
+        "chunk_type": "history_overview_V0000012",
+        "text": "P00011 | history_overview_V0000012 | 10-04-2025. Patient has BP of 145/92, Sugar Level of 220, Weight of 82 lbs and Height of 171 cm with Pulse rate of 90 bpm and Temperature of 98.6\u00b0F."
+    },
+    {
+        "chunk_id": "P00011_history_symptoms_V0000012",
+        "patient_id": "P00011",
+        "chunk_type": "history_symptoms_V0000012",
+        "text": "P00011 | history_symptoms_V0000012. Patient has symptoms of frequent urination, extreme thirst, tingling sensation in feet, and slow healing foot ulcers."
+    },
+    {
+        "chunk_id": "P00011_history_prev_medication_V0000012",
+        "patient_id": "P00011",
+        "chunk_type": "history_prev_medication_V0000012",
+        "text": "P00011 | history_prev_medication_V0000012. Patient has previous medications of Metformin 500mg and Insulin Injection."
+    },
+    {
+        "chunk_id": "P00011_history_diagnosis_V0000012",
+        "patient_id": "P00011",
+        "chunk_type": "history_diagnosis_V0000012",
+        "text": "P00011 | history_diagnosis_V0000012. Patient has Uncontrolled Type 2 Diabetes Mellitus with Peripheral Arterial Disease, Visit ID: V0000012."
+    },
+    {
+        "chunk_id": "P00011_history_treatment_V0000012",
+        "patient_id": "P00011",
+        "chunk_type": "history_treatment_V0000012",
+        "text": "P00011 | history_treatment_V0000012. Patient has a strict low carbohydrate diet during visit V0000012."
+    },
+    {
+        "chunk_id": "P00011_history_overview_V0000011",
+        "patient_id": "P00011",
+        "chunk_type": "history_overview_V0000011",
+        "text": "P00011 | history_overview_V0000011 | 15-03-2025. Patient has BP of 140/90, sugar level of 210 mg/dL, weight of 83 kg, and height of 171 cm with pulse rate of 88 bpm and temperature of 98.4\u00b0F."
+    },
+    {
+        "chunk_id": "P00011_history_symptoms_V0000011",
+        "patient_id": "P00011",
+        "chunk_type": "history_symptoms_V0000011",
+        "text": "P00011 | history_symptoms_V0000011. Patient has symptoms of frequent urination and fatigue."
+    },
+    {
+        "chunk_id": "P00011_history_prev_medication_V0000011",
+        "patient_id": "P00011",
+        "chunk_type": "history_prev_medication_V0000011",
+        "text": "P00011 | history_prev_medication_V0000011 | Previous medications: Metformin."
+    },
+    {
+        "chunk_id": "P00011_history_diagnosis_V0000011",
+        "patient_id": "P00011",
+        "chunk_type": "history_diagnosis_V0000011",
+        "text": "P00011 | history_diagnosis_V0000011. Patient has Poorly controlled Type 2 Diabetes Mellitus with early peripheral neuropathy, visit ID V0000011."
+    },
+    {
+        "chunk_id": "P00011_history_treatment_V0000011",
+        "patient_id": "P00011",
+        "chunk_type": "history_treatment_V0000011",
+        "text": "P00011 | history_treatment_V0000011. Patient has medications of Metformin and Lifestyle modification, dietary advice of a Low carbohydrate diet."
+    },
+    {
+        "chunk_id": "P00012_profile_identity",
+        "patient_id": "P00012",
+        "chunk_type": "profile_identity",
+        "text": "P00012 | profile_identity. Patient ID: P00012, Name: Meenakshi Sundaram, Date of Birth: 03-09-1978, Address: KK Nagar, Madurai, Tamil Nadu, India- 625020, Phone: +91 9791212345, Email: meenakshi@gmail.com."
+    },
+    {
+        "chunk_id": "P00012_profile_risk",
+        "patient_id": "P00012",
+        "chunk_type": "profile_risk",
+        "text": "P00012 | profile_risk. Patient has allergies to Sulfa Drugs and hereditary diseases including Diabetes."
+    },
+    {
+        "chunk_id": "P00012_visit_overview_V0000013",
+        "patient_id": "P00012",
+        "chunk_type": "visit_overview_V0000013",
+        "text": "P00012 | visit_overview_V0000013 | 12-04-2025. Patient has BP of 138/88, Sugar Level of 245, Weight of 75 kg, Height of 161 cm, Pulse rate of 92 bpm, Temperature of 99.1\u00b0F."
+    },
+    {
+        "chunk_id": "P00012_visit_symptoms_V0000013",
+        "patient_id": "P00012",
+        "chunk_type": "visit_symptoms_V0000013",
+        "text": "P00012 | visit_symptoms_V0000013. Patient has symptoms of extreme hunger, frequent urination, unintentional weight loss, and fruity smelling breath."
+    },
+    {
+        "chunk_id": "P00012_visit_medication_V0000013",
+        "patient_id": "P00012",
+        "chunk_type": "visit_medication_V0000013",
+        "text": "P00012 | visit_medication_V0000013. Patient has current medications of Insulin and Metformin."
+    },
+    {
+        "chunk_id": "P00012_visit_blood_report_V0000013",
+        "patient_id": "P00012",
+        "chunk_type": "visit_blood_report_V0000013",
+        "text": "P00012 | visit_blood_report_V0000013 | Blood report on 09-15-2024. Patient has HbA1c of 10.1 and creatinine level of 1.3."
+    },
+    {
+        "chunk_id": "P00012_visit_scan_reports_V0000013",
+        "patient_id": "P00012",
+        "chunk_type": "visit_scan_reports_V0000013",
+        "text": "P00012 | visit_scan_reports_V0000013. Patient has MRI scan reports indicating evidence of moderate Non-Alcoholic Fatty Liver Disease in a diabetic patient."
+    },
+    {
+        "chunk_id": "P00012_history_overview_V0000012",
+        "patient_id": "P00012",
+        "chunk_type": "history_overview_V0000012",
+        "text": "P00012 | history_overview_V0000012 | 10-03-2025. Patient has BP of 135/85, sugar level of 210 mg/dL, weight of 77 kg, height of 161 cm, and pulse rate of 89 bpm with temperature of 98.7\u00b0F."
+    },
+    {
+        "chunk_id": "P00012_history_symptoms_V0000012",
+        "patient_id": "P00012",
+        "chunk_type": "history_symptoms_V0000012",
+        "text": "P00012 | history_symptoms_V0000012. Patient has symptoms of thirst and fatigue."
+    },
+    {
+        "chunk_id": "P00012_history_prev_medication_V0000012",
+        "patient_id": "P00012",
+        "chunk_type": "history_prev_medication_V0000012",
+        "text": "P00012 | history_prev_medication_V0000012. Patient has previous medications: Metformin."
+    },
+    {
+        "chunk_id": "P00012_history_diagnosis_V0000012",
+        "patient_id": "P00012",
+        "chunk_type": "history_diagnosis_V0000012",
+        "text": "P00012 | history_diagnosis_V0000012. The patient, P00012, has a diagnosis of Type 1 Diabetes Mellitus with symptoms including early ketoacidosis and fatty liver involvement."
+    },
+    {
+        "chunk_id": "P00012_history_treatment_V0000012",
+        "patient_id": "P00012",
+        "chunk_type": "history_treatment_V0000012",
+        "text": "P00012 | history_treatment_V0000012. Patient has been treated with insulin therapy and metformin, following a controlled carbohydrate diabetic diet."
+    },
+    {
+        "chunk_id": "P00013_profile_identity",
+        "patient_id": "P00013",
+        "chunk_type": "profile_identity",
+        "text": "P00013 | profile_identity. Patient details: Name - Revathi Natarajan, DOB - 21-08-1989, Address - Gandhipuram, Coimbatore, Tamil Nadu, India- 641012, Phone - +919843012345, Email - revathi@gmail.com."
+    },
+    {
+        "chunk_id": "P00013_profile_risk",
+        "patient_id": "P00013",
+        "chunk_type": "profile_risk",
+        "text": "P00013 | profile_risk. Patient has no allergies and is at risk due to hereditary thyroid disorder."
+    },
+    {
+        "chunk_id": "P00013_visit_overview_V0000014",
+        "patient_id": "P00013",
+        "chunk_type": "visit_overview_V0000014",
+        "text": "P00013 | visit_overview_V0000014 | 11-04-2025. Patient has BP of 118/78, sugar level of 95 mg/dL, weight of 68 lbs, height of 165 cm, pulse rate of 58 beats per minute, and temperature of 97.8\u00b0F."
+    },
+    {
+        "chunk_id": "P00013_visit_symptoms_V0000014",
+        "patient_id": "P00013",
+        "chunk_type": "visit_symptoms_V0000014",
+        "text": "P00013 | visit_symptoms_V0000014. Patient has symptoms of extreme fatigue, constipation, puffy face, thinning eyebrows, and memory loss."
+    },
+    {
+        "chunk_id": "P00013_visit_medication_V0000014",
+        "patient_id": "P00013",
+        "chunk_type": "visit_medication_V0000014",
+        "text": "Header: [P00013 | V0000014]  \nData: {\"Patient ID\": \"P00013\", \"Visit ID\": \"V0000014\", \"Current Medications\": [\"Levothyroxine 50mcg\"]}"
+    },
+    {
+        "chunk_id": "P00013_visit_blood_report_V0000014",
+        "patient_id": "P00013",
+        "chunk_type": "visit_blood_report_V0000014",
+        "text": "P00013 | visit_blood_report_V0000014 | 27-11-2021. Patient has HbA1c of 5.4 and creatinine of 0.8."
+    },
+    {
+        "chunk_id": "P00013_visit_scan_reports_V0000014",
+        "patient_id": "P00013",
+        "chunk_type": "visit_scan_reports_V0000014",
+        "text": "P00013 | visit_scan_reports_V0000014. Patient has MRI Scan reports for V0000014 with findings of diffuse heterogeneous thyroid texture suggestive of Hashimoto's Thyroiditis, indicated by a suspected hypothyroidism and thyroid enlargement."
+    },
+    {
+        "chunk_id": "P00014_profile_identity",
+        "patient_id": "P00014",
+        "chunk_type": "profile_identity",
+        "text": "P00014 | profile_identity. Patient has ID P00014, name Karthik Subramanian, born on 02-02-1983 in Velachery, Chennai, Tamil Nadu, India-600042, phone +91 9791312345, and email karthik@gmail.com."
+    },
+    {
+        "chunk_id": "P00014_profile_risk",
+        "patient_id": "P00014",
+        "chunk_type": "profile_risk",
+        "text": "P00014 | profile_risk. Patient has allergies to dust and hereditary diseases including thyroid disease."
+    },
+    {
+        "chunk_id": "P00014_visit_overview_V0000015",
+        "patient_id": "P00014",
+        "chunk_type": "visit_overview_V0000015",
+        "text": "P00014 | visit_overview_V0000015 | 12-04-2025. Patient has BP of 115/75, sugar level of 92, weight of 80 lbs, and pulse rate of 56 bpm with temperature at 97.7\u00b0F."
+    },
+    {
+        "chunk_id": "P00014_visit_symptoms_V0000015",
+        "patient_id": "P00014",
+        "chunk_type": "visit_symptoms_V0000015",
+        "text": "P00014 | visit_symptoms_V0000015. Patient has symptoms of slow heart rate, depression, muscle aches, and hoarse voice."
+    },
+    {
+        "chunk_id": "P00014_visit_medication_V0000015",
+        "patient_id": "P00014",
+        "chunk_type": "visit_medication_V0000015",
+        "text": "Header: [P00014 | visit_medication_V0000015]  \nData: {\"Patient ID\": \"P00014\", \"Visit ID\": \"V0000015\", \"Current Medications\": [\"Levothyroxine\"]}"
+    },
+    {
+        "chunk_id": "P00014_visit_blood_report_V0000015",
+        "patient_id": "P00014",
+        "chunk_type": "visit_blood_report_V0000015",
+        "text": "P00014 | V0000015 | 12-16-2023. Patient has HbA1c of 5.5 and creatinine level of 0.9."
+    },
+    {
+        "chunk_id": "P00014_visit_scan_reports_V0000015",
+        "patient_id": "P00014",
+        "chunk_type": "visit_scan_reports_V0000015",
+        "text": "P00014 | v0000015 | MRI Scan of thyroid. RAIU Scan indicates low iodine uptake, consistent with hypothyroidism."
+    },
+    {
+        "chunk_id": "P00015_profile_identity",
+        "patient_id": "P00015",
+        "chunk_type": "profile_identity",
+        "text": "P00015 | profile_identity. Patient ID: P00015, Name: Suresh Kumar, Date of Birth: 18-05-1976, Address: Thillai Nagar, Trichy, Tamil Nadu, India- 620018, Phone: +919443212345, Email: suresh@gmail.com."
+    },
+    {
+        "chunk_id": "P00015_profile_risk",
+        "patient_id": "P00015",
+        "chunk_type": "profile_risk",
+        "text": "P00015 | profile_risk. Patient has no allergies and is predisposed to Hypertension due to hereditary conditions."
+    },
+    {
+        "chunk_id": "P00015_visit_overview_V0000016",
+        "patient_id": "P00015",
+        "chunk_type": "visit_overview_V0000016",
+        "text": "P00015 | V0000016 | 13-04-2025. Patient has BP of 170/105, sugar level of 110, weight of 84 lbs, and pulse rate of 95 bpm with a temperature of 98.6\u00b0F."
+    },
+    {
+        "chunk_id": "P00015_visit_symptoms_V0000016",
+        "patient_id": "P00015",
+        "chunk_type": "visit_symptoms_V0000016",
+        "text": "P00015 | V0000016 | Symptoms: Severe headache, dizziness, nosebleeds, blurred vision."
+    },
+    {
+        "chunk_id": "P00015_visit_medication_V0000016",
+        "patient_id": "P00015",
+        "chunk_type": "visit_medication_V0000016",
+        "text": "P00015 | V0000016 | Current medications include amlodipine and losartan."
+    },
+    {
+        "chunk_id": "P00015_visit_blood_report_V0000016",
+        "patient_id": "P00015",
+        "chunk_type": "visit_blood_report_V0000016",
+        "text": "P00015 | V0000016 | 20-03-2024. Patient has HbA1C of 5.6 and Creatinine level of 1."
+    },
+    {
+        "chunk_id": "P00015_visit_scan_reports_V0000016",
+        "patient_id": "P00015",
+        "chunk_type": "visit_scan_reports_V0000016",
+        "text": "P00015 | V0000016 | Scan Reports for CT. Patient has evidence of left ventricular hypertrophy as indicated by ECG findings in the evaluation of chronic hypertension effects.\n\nHeader: [P00023 | visit_notes_V0000017]\nData: {\n  \"Patient ID\": \"P00023\",\n  \"Visit ID\": \"V0000017\",\n  \"Notes\": [\n    {\n      \"Diagnosis\": [\"Acute myocardial infarction\"],\n      \"Symptoms\": [\"Chest pain\", \"Shortness of breath\"]\n    }\n  ]\n}\nOutput:\nP00023 | V0000017 | Notes. Patient has acute myocardial infarction with chest pain and shortness of breath.\n\nHeader: [P00045 | ECG_V0000009]\nData: {\n  \"Patient ID\": \"P00045\",\n  \"Visit ID\": \"V0000009\",\n  \"ECG Results\": [\n    {\n      \"Clinical Indication\": \"Evaluation of chronic hypertension effects.\",\n      \"Findings\": [\n        {\n          \"Heart\": \"Evidence of left ventricular hypertrophy.\"\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00045 | V0000009 | ECG. Patient has evidence of left ventricular hypertrophy as indicated by the clinical indication evaluation of chronic hypertension effects.\n\nHeader: [P00123 | lab_results_V0000008]\nData: {\n  \"Patient ID\": \"P00123\",\n  \"Visit ID\": \"V0000008\",\n  \"Lab Results\": [\n    {\n      \"Blood Glucose Level\": \"12.5 mmol/L\",\n      \"Clinical Indication\": \"Evaluation of diabetes management.\"\n    },\n    {\n      \"HbA1c\": \"8.2%\",\n      \"Clinical Indication\": \"Monitoring glycemic control.\"\n    }\n  ]\n}\nOutput:\nP00123 | V0000008 | Lab Results. Patient has blood glucose level of 12.5 mmol/L and HbA1c of 8.2% for monitoring diabetes management and glycemic control.\n\nHeader: [P00246 | imaging_reports_V0000034]\nData: {\n  \"Patient ID\": \"P00246\",\n  \"Visit ID\": \"V0000034\",\n  \"Imaging Reports\": [\n    {\n      \"MRI Scan\": [\n        {\n          \"Neurological Findings\": [\n            {\n              \"Meningeal Irritation\": \"Sign of increased intracranial pressure.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"CT Scan\": [\n        {\n          \"Cardiovascular System\": [\n            {\n              \"Peripheral Arteries\": \"Disease detected in the lower extremities, including arterial occlusion and stenosis.\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00246 | V0000034 | Imaging Reports. Patient has meningeal irritation as indicated by increased intracranial pressure on MRI scan and disease detected in peripheral arteries of the lower extremities, including arterial occlusion and stenosis on CT scan.\n\nHeader: [P00578 | surgical_notes_V0000026]\nData: {\n  \"Patient ID\": \"P00578\",\n  \"Visit ID\": \"V0000026\",\n  \"Surgical Notes\": [\n    {\n      \"Procedure\": \"Laparoscopic cholecystectomy\",\n      \"Clinical Indication\": \"Removal of gallstones.\"\n    },\n    {\n      \"Post-Operative Care\": [\"No complications reported.\"],\n      \"Follow-Up\": [\"Scheduled for one month post-surgery.\"]\n    }\n  ]\n}\nOutput:\nP00578 | V0000026 | Surgical Notes. Patient had a laparoscopic cholecystectomy with no complications and scheduled for follow-up in one month.\n\nHeader: [P00134 | radiology_reports_V0000007]\nData: {\n  \"Patient ID\": \"P00134\",\n  \"Visit ID\": \"V0000007\",\n  \"Radiology Reports\": [\n    {\n      \"X-Ray\": [\n        {\n          \"Abdominal\": [\n            {\n              \"Kidney Stones\": \"Presence of multiple small stones in the left kidney.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"CT Scan\": [\n        {\n          \"Brain Imaging\": [\n            {\n              \"Meningeal Lesion\": \"Tumour detected in the right cerebral hemisphere.\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00134 | V0000007 | Radiology Reports. Patient has kidney stones as indicated by multiple small stones in the left kidney on X-ray and tumour detected in the right cerebral hemisphere on CT scan imaging.\n\nHeader: [P00256 | genetic_test_results_V0000031]\nData: {\n  \"Patient ID\": \"P00256\",\n  \"Visit ID\": \"V0000031\",\n  \"Genetic Test Results\": [\n    {\n      \"Clinical Indication\": \"Diagnosis of Type 2 Diabetes.\",\n      \"Test Name\": \"HbA1c\",\n      \"Result\": \"8.7%\"\n    },\n    {\n      \"Clinical Indication\": \"Monitoring for Hashimoto's Thyroiditis.\",\n      \"Test Name\": \"TSH\",\n      \"Result\": \"5.3 mIU/L\"\n    }\n  ]\n}\nOutput:\nP00256 | V0000031 | Genetic Test Results. Patient has HbA1c of 8.7% for diagnosis of Type 2 Diabetes and TSH of 5.3 mIU/L for monitoring for Hashimoto's Thyroiditis.\n\nHeader: [P00498 | allergy_tests_V0000014]\nData: {\n  \"Patient ID\": \"P00498\",\n  \"Visit ID\": \"V0000014\",\n  \"Allergy Tests\": [\n    {\n      \"Clinical Indication\": \"Evaluation of medication allergies.\",\n      \"Test Name\": \"Penicillin Skin Test\",\n      \"Result\": \"Positive\"\n    },\n    {\n      \"Clinical Indication\": \"Monitoring for anaphylaxis risk.\",\n      \"Test Name\": \"Gluten Intolerance Test\",\n      \"Result\": \"Negative\"\n    }\n  ]\n}\nOutput:\nP00498 | V0000014 | Allergy Tests. Patient has a positive penicillin skin test and negative gluten intolerance test.\n\nHeader: [P00723 | imaging_reports_V0000015]\nData: {\n  \"Patient ID\": \"P00723\",\n  \"Visit ID\": \"V0000015\",\n  \"Imaging Reports\": [\n    {\n      \"MRI Scan\": [\n        {\n          \"Neurological Findings\": [\n            {\n              \"Brain Tumor\": \"Tumour detected in the left frontal lobe.\"\n            }\n          ]\n        }\n      ],\n      \"CT Scan\": [\n        {\n          \"Cardiovascular System\": [\n            {\n              \"Peripheral Arteries\": \"Disease detected in the lower extremities, including arterial occlusion and stenosis.\"\n            }\n          ]\n        },\n        {\n          \"Abdominal\": [\n            {\n              \"Liver Cirrhosis\": \"Advanced stage of liver disease with fibrosis and nodular regeneration.\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00723 | V0000015 | Imaging Reports. Patient has brain tumour detected in the left frontal lobe on MRI scan, disease detected in peripheral arteries of the lower extremities and liver cirrhosis on CT scan imaging."
+    },
+    {
+        "chunk_id": "P00016_profile_identity",
+        "patient_id": "P00016",
+        "chunk_type": "profile_identity",
+        "text": "P00016 | profile_identity. Patient ID: P00016, Name: Manikandan, Date of Birth (DOB): January 27, 1981, Address: Tiruppur Road, Erode, Tamil Nadu, India- 638001, Phone: +91 9842712345, Email: mani@gmail.com."
+    },
+    {
+        "chunk_id": "P00016_profile_risk",
+        "patient_id": "P00016",
+        "chunk_type": "profile_risk",
+        "text": "P00016 | profile_risk. Patient has no allergies and is at risk due to hereditary hypertension."
+    },
+    {
+        "chunk_id": "P00016_visit_overview_V0000017",
+        "patient_id": "P00016",
+        "chunk_type": "visit_overview_V0000017",
+        "text": "P00016 | visit_overview_V0000017 | 12-04-2025. Patient has BP of 165/102, sugar level of 115, weight of 90 lbs, pulse rate of 100 bpm, and temperature of 98.5\u00b0F."
+    },
+    {
+        "chunk_id": "P00016_visit_symptoms_V0000017",
+        "patient_id": "P00016",
+        "chunk_type": "visit_symptoms_V0000017",
+        "text": "P00016 | V0000017 | 05-23-2024. Patient has chest pain, confusion, and shortness of breath."
+    },
+    {
+        "chunk_id": "P00016_visit_medication_V0000017",
+        "patient_id": "P00016",
+        "chunk_type": "visit_medication_V0000017",
+        "text": "P00016 | V0000017 | Current medications: Losartan."
+    },
+    {
+        "chunk_id": "P00016_visit_blood_report_V0000017",
+        "patient_id": "P00016",
+        "chunk_type": "visit_blood_report_V0000017",
+        "text": "P00016 | V0000017 | 20-03-2024. Patient has HbA1c of 5.8 and creatinine level of 1.1."
+    },
+    {
+        "chunk_id": "P00016_visit_scan_reports_V0000017",
+        "patient_id": "P00016",
+        "chunk_type": "visit_scan_reports_V0000017",
+        "text": "P00016 | V0000017. Scan reports indicate a mild concentric left ventricular hypertrophy on the MRI, evaluated for heart muscle thickness."
+    },
+    {
+        "chunk_id": "P00017_profile_identity",
+        "patient_id": "P00017",
+        "chunk_type": "profile_identity",
+        "text": "P00017 | profile_identity. Patient has ID P00017, name Prabhakaran, date of birth 05-06-1968, address Tambaram, Chennai, Tamil Nadu, India- 600045, and phone number +91+9791412345."
+    },
+    {
+        "chunk_id": "P00017_profile_risk",
+        "patient_id": "P00017",
+        "chunk_type": "profile_risk",
+        "text": "P00017 | profile_risk | Patient has no allergies and is at risk due to hereditary kidney disease."
+    },
+    {
+        "chunk_id": "P00017_visit_overview_V0000018",
+        "patient_id": "P00017",
+        "chunk_type": "visit_overview_V0000018",
+        "text": "P00017 | visit_overview_V0000018 | 10-04-2025. Patient has BP of 150/90, sugar level at 120 mg/dL, weight of 76 lbs, and pulse rate of 88 bpm with temperature of 98.2\u00b0F."
+    },
+    {
+        "chunk_id": "P00017_visit_symptoms_V0000018",
+        "patient_id": "P00017",
+        "chunk_type": "visit_symptoms_V0000018",
+        "text": "Header: [P00017 | visit_symptoms_V0000018]\nData: {\"Patient ID\": \"P00017\", \"Visit ID\": \"V0000018\", \"Symptoms\": [\"Swollen ankles\", \"Persistent itching\", \"Loss of appetite\"]}"
+    },
+    {
+        "chunk_id": "P00017_visit_medication_V0000018",
+        "patient_id": "P00017",
+        "chunk_type": "visit_medication_V0000018",
+        "text": "P00017 | V0000018 | Current medications include ACE Inhibitors."
+    },
+    {
+        "chunk_id": "P00017_visit_blood_report_V0000018",
+        "patient_id": "P00017",
+        "chunk_type": "visit_blood_report_V0000018",
+        "text": "P00017 | visit_blood_report_V0000018 | 10-04-2025. Patient has HbA1c of 5.7 and creatinine level of 2.2."
+    },
+    {
+        "chunk_id": "P00017_visit_scan_reports_V0000018",
+        "patient_id": "P00017",
+        "chunk_type": "visit_scan_reports_V0000018",
+        "text": "P00017 | visit_scan_reports_V0000018. Scan reports indicate reduced kidney size, suggesting chronic kidney disease due to renal CT Urogram findings. Kidneys: Reduced kidney size indicating chronic kidney disease."
+    },
+    {
+        "chunk_id": "P00018_profile_identity",
+        "patient_id": "P00018",
+        "chunk_type": "profile_identity",
+        "text": "P00018 | profile_identity. Patient has ID P00018, name Muthukumar, date of birth 09-03-1970, address Namakkal Main Road, Salem, Tamil Nadu, India-636005, and phone number +919842312345."
+    },
+    {
+        "chunk_id": "P00018_profile_risk",
+        "patient_id": "P00018",
+        "chunk_type": "profile_risk",
+        "text": "Header: P00018 | profile_risk. Patient has no allergies and a history of Kidney Disease."
+    },
+    {
+        "chunk_id": "P00018_visit_overview_V0000019",
+        "patient_id": "P00018",
+        "chunk_type": "visit_overview_V0000019",
+        "text": "P00018 | visit_overview_V0000019 | 13-04-2025. Patient has BP of 148/90, sugar level of 115, weight of 70 kg, and pulse rate of 84 bpm with temperature of 98.1\u00b0C."
+    },
+    {
+        "chunk_id": "P00018_visit_symptoms_V0000019",
+        "patient_id": "P00018",
+        "chunk_type": "visit_symptoms_V0000019",
+        "text": "P00018 | visit_symptoms_V0000019. Patient has puffy eyes, persistent fatigue, and ammonia breath."
+    },
+    {
+        "chunk_id": "P00018_visit_medication_V0000019",
+        "patient_id": "P00018",
+        "chunk_type": "visit_medication_V0000019",
+        "text": "P00018 | V0000019 | Current medications include Diuretics."
+    },
+    {
+        "chunk_id": "P00018_visit_blood_report_V0000019",
+        "patient_id": "P00018",
+        "chunk_type": "visit_blood_report_V0000019",
+        "text": "P00018 | visit_blood_report_V0000019 | 03-15-2023. Patient has HbA1c of 5.4 and creatinine of 2.6."
+    },
+    {
+        "chunk_id": "P00018_visit_scan_reports_V0000019",
+        "patient_id": "P00018",
+        "chunk_type": "visit_scan_reports_V0000019",
+        "text": "P00018 | V0000019. Scan Reports indicate renal ultrasound findings of both kidneys appearing shrunken with cortical thinning, evaluated for kidney size and damage."
+    },
+    {
+        "chunk_id": "P00019_profile_identity",
+        "patient_id": "P00019",
+        "chunk_type": "profile_identity",
+        "text": "P00019 | profile_identity. Patient ID: P00019, Name: Ravi Chandran, Date of Birth: 14-04-1965, Address: Adyar, Chennai, Tamil Nadu, India- 600020, Phone: +919840011111, Email: ravi@gmail.com."
+    },
+    {
+        "chunk_id": "P00019_profile_risk",
+        "patient_id": "P00019",
+        "chunk_type": "profile_risk",
+        "text": "P00019 | profile_risk. Patient has no allergies and is at risk for Heart Disease."
+    },
+    {
+        "chunk_id": "P00019_visit_overview_V0000020",
+        "patient_id": "P00019",
+        "chunk_type": "visit_overview_V0000020",
+        "text": "P00019 | visit_overview_V0000020 | 11-04-2025. Patient has BP of 140/88, sugar level of 108, weight of 88 lbs, and pulse rate of 105 bpm."
+    },
+    {
+        "chunk_id": "P00019_visit_symptoms_V0000020",
+        "patient_id": "P00019",
+        "chunk_type": "visit_symptoms_V0000020",
+        "text": "P00019 | V0000020 | 05-23-2023. Patient has symptoms of shortness of breath, orthopnea, and rapid heartbeat."
+    },
+    {
+        "chunk_id": "P00019_visit_medication_V0000020",
+        "patient_id": "P00019",
+        "chunk_type": "visit_medication_V0000020",
+        "text": "[Header] P00019 | V0000020 | Current Medications: Furosemide, Beta Blocker. Patient has been prescribed Furosemide and a Beta Blocker for treatment."
+    },
+    {
+        "chunk_id": "P00019_visit_blood_report_V0000020",
+        "patient_id": "P00019",
+        "chunk_type": "visit_blood_report_V0000020",
+        "text": "P00019 | visit_blood_report_V0000020 | 18-03-2024. Patient has HbA1c of 5.5 and creatinine of 1.2."
+    },
+    {
+        "chunk_id": "P00019_visit_scan_reports_V0000020",
+        "patient_id": "P00019",
+        "chunk_type": "visit_scan_reports_V0000020",
+        "text": "P00019 | visit_scan_reports_V0000020. The patient has XRay findings of cardiomegaly and pulmonary edema, cardiac MRI indicating reduced ejection fraction with myocardial scarring.\n\nP00019 | V0000020. The patient has a scan reports for Heart failure symptoms and Cardiac MRI, showing Reduced ejection fraction with myocardial scarring."
+    },
+    {
+        "chunk_id": "P00020_profile_identity",
+        "patient_id": "P00020",
+        "chunk_type": "profile_identity",
+        "text": "P00020 | profile_identity. Patient is Balasubramanian, born on 22-07-1962, resides at Thanjavur Main Road, Thanjavur, Tamil Nadu, India- 613001, with contact details Phone: +919443312345 and Email: bala@gmail.com."
+    },
+    {
+        "chunk_id": "P00020_profile_risk",
+        "patient_id": "P00020",
+        "chunk_type": "profile_risk",
+        "text": "P00020 | profile_risk | Patient has no allergies and is at risk for Heart Disease."
+    },
+    {
+        "chunk_id": "P00020_visit_overview_V0000021",
+        "patient_id": "P00020",
+        "chunk_type": "visit_overview_V0000021",
+        "text": "P00020 | visit_overview_V0000021 | 12-04-2025. Patient has BP of 138/85, sugar level of 105, weight of 90 lbs, and pulse rate of 110 bpm with temperature of 98.4\u00b0F."
+    },
+    {
+        "chunk_id": "P00020_visit_symptoms_V0000021",
+        "patient_id": "P00020",
+        "chunk_type": "visit_symptoms_V0000021",
+        "text": "P00020 | visit_symptoms_V0000021. Patient has symptoms of breathlessness, distended neck veins, and night breathing difficulty."
+    },
+    {
+        "chunk_id": "P00020_visit_medication_V0000021",
+        "patient_id": "P00020",
+        "chunk_type": "visit_medication_V0000021",
+        "text": "P00020 | V0000021 | Current medications: ACE Inhibitors, Diuretics."
+    },
+    {
+        "chunk_id": "P00020_visit_blood_report_V0000021",
+        "patient_id": "P00020",
+        "chunk_type": "visit_blood_report_V0000021",
+        "text": "P00020 | visit_blood_report_V0000021 | 04-05-2023. Patient has HbA1c of 5.6 and creatinine level of 1.1."
+    },
+    {
+        "chunk_id": "P00020_visit_scan_reports_V0000021",
+        "patient_id": "P00020",
+        "chunk_type": "visit_scan_reports_V0000021",
+        "text": "P00020 | visit_scan_reports_V0000021. Scan reports indicate a Chest X-ray showing pulmonary edema and an enlarged cardiac silhouette for the patient, with clinical indication of Heart failure assessment. Patient has no further information provided in the scan reports."
+    },
+    {
+        "chunk_id": "P00021_profile_identity",
+        "patient_id": "P00021",
+        "chunk_type": "profile_identity",
+        "text": "Header: [P00021 | profile_identity]\nData: {\"Patient ID\": \"P00021\", \"Name\": \"Saravanan\", \"DOB\": \"11-11-1979\", \"Address\": \"Puduchatram Road, Namakkal, Tamil Nadu, India- 637001\", \"Phone\": \"+91 9791712345\", \"Email\": \"saravanan@gmail.com\"}"
+    },
+    {
+        "chunk_id": "P00021_profile_risk",
+        "patient_id": "P00021",
+        "chunk_type": "profile_risk",
+        "text": "Header: [P00021 | profile_risk]\nData: {\"Patient ID\": \"P00021\", \"Allergies\": [], \"Hereditary Diseases\": [\"High Cholesterol\"]}"
+    },
+    {
+        "chunk_id": "P00021_visit_overview_V0000022",
+        "patient_id": "P00021",
+        "chunk_type": "visit_overview_V0000022",
+        "text": "Header: [P00021 | visit_overview_V0000022]\nData: {\n  \"Patient ID\": \"P00021\",\n  \"Visit ID\": \"V0000022\",\n  \"Date\": \"12-04-2025\",\n  \"BP\": \"135/85\",\n  \"Sugar Level\": \"100\",\n  \"Weight\": 85,\n  \"Pulse\": 82,\n  \"Temperature\": 98.6\n}"
+    },
+    {
+        "chunk_id": "P00021_visit_symptoms_V0000022",
+        "patient_id": "P00021",
+        "chunk_type": "visit_symptoms_V0000022",
+        "text": "P00021 | V0000022 | Symptoms: Leg pain while walking, Yellow patches on eyelids. Patient's symptoms include leg pain during walking and yellowish discoloration of the eyelids."
+    },
+    {
+        "chunk_id": "P00021_visit_medication_V0000022",
+        "patient_id": "P00021",
+        "chunk_type": "visit_medication_V0000022",
+        "text": "Header: [P00021 | V0000022]  \nData: {\"Patient ID\": \"P00021\", \"Visit ID\": \"V0000022\", \"Current Medications\": [\"Atorvastatin\"]}"
+    },
+    {
+        "chunk_id": "P00021_visit_blood_report_V0000022",
+        "patient_id": "P00021",
+        "chunk_type": "visit_blood_report_V0000022",
+        "text": "P00021 | visit_blood_report_V0000022 | 10-10-2023. Patient has HbA1c of 5.5 and creatinine of 0.9."
+    },
+    {
+        "chunk_id": "P00021_visit_scan_reports_V0000022",
+        "patient_id": "P00021",
+        "chunk_type": "visit_scan_reports_V0000022",
+        "text": "P00021 | visit_scan_reports_V0000022. Scan reports indicate moderate calcified plaque buildup in the heart for patient P00021."
+    },
+    {
+        "chunk_id": "P00021_history_overview_V0000021",
+        "patient_id": "P00021",
+        "chunk_type": "history_overview_V0000021",
+        "text": "P00021 | history_overview_V0000021 | 10-03-2025. Patient has BP of 138/86, Sugar Level of 102 mg/dL, Weight of 86 kg, Pulse of 84 bpm, and Temperature of 98.5\u00b0F."
+    },
+    {
+        "chunk_id": "P00021_history_symptoms_V0000021",
+        "patient_id": "P00021",
+        "chunk_type": "history_symptoms_V0000021",
+        "text": "P00021 | history_symptoms_V0000021. Patient has leg pain during walking and mild fatigue."
+    },
+    {
+        "chunk_id": "P00021_history_prev_medication_V0000021",
+        "patient_id": "P00021",
+        "chunk_type": "history_prev_medication_V0000021",
+        "text": "Header: [P00021 | history_prev_medication_V0000021]  \nData: {\"Patient ID\": \"P00021\", \"Visit ID\": \"V0000021\", \"Previous Medications\": [\"Lifestyle modification\"]}"
+    },
+    {
+        "chunk_id": "P00021_history_diagnosis_V0000021",
+        "patient_id": "P00021",
+        "chunk_type": "history_diagnosis_V0000021",
+        "text": "P00021 | history_diagnosis_V0000021 | 08-15-2023. Patient has been diagnosed with dyslipidemia, characterized by elevated LDL cholesterol levels increasing the risk of coronary artery disease."
+    },
+    {
+        "chunk_id": "P00021_history_treatment_V0000021",
+        "patient_id": "P00021",
+        "chunk_type": "history_treatment_V0000021",
+        "text": "P00021 | history_treatment_V0000021. Patient has medications of Atorvastatin and dietary restrictions including a low cholesterol diet and avoidance of fried foods."
+    },
+    {
+        "chunk_id": "P00022_profile_identity",
+        "patient_id": "P00022",
+        "chunk_type": "profile_identity",
+        "text": "P00022 | profile_identity. Patient ID: P00022, Name: Venkatesh, Date of Birth (DOB): 06-04-1982, Address: Villivakkam, Chennai, Tamil Nadu, India - 600049, Phone: +91 9840912345, Email: venkatesh@gmail.com."
+    },
+    {
+        "chunk_id": "P00022_profile_risk",
+        "patient_id": "P00022",
+        "chunk_type": "profile_risk",
+        "text": "Header: [P00022 | profile_risk]\nData: {\"Patient ID\": \"P00022\", \"Allergies\": [], \"Hereditary Diseases\": [\"High Cholesterol\"]}"
+    },
+    {
+        "chunk_id": "P00022_visit_overview_V0000023",
+        "patient_id": "P00022",
+        "chunk_type": "visit_overview_V0000023",
+        "text": "P00022 | visit_overview_V0000023 | 13-04-2025. Patient has BP of 132/84, sugar level of 102, weight of 83 kg, and pulse rate of 80 bpm with temperature of 98.3\u00b0F."
+    },
+    {
+        "chunk_id": "P00022_visit_symptoms_V0000023",
+        "patient_id": "P00022",
+        "chunk_type": "visit_symptoms_V0000023",
+        "text": "Header: [P00022 | V0000023]  \nData: {\"Patient ID\": \"P00022\", \"Visit ID\": \"V0000023\", \"Symptoms\": [\"Fatty lumps near joints\", \"Arcus senilis around iris\"]}"
+    },
+    {
+        "chunk_id": "P00022_visit_medication_V0000023",
+        "patient_id": "P00022",
+        "chunk_type": "visit_medication_V0000023",
+        "text": "Header: [P00022 | V0000023]  \nData: {\"Patient ID\": \"P00022\", \"Visit ID\": \"V0000023\", \"Current Medications\": [\"Rosuvastatin\"]}"
+    },
+    {
+        "chunk_id": "P00022_visit_blood_report_V0000023",
+        "patient_id": "P00022",
+        "chunk_type": "visit_blood_report_V0000023",
+        "text": "P00022 | visit_blood_report_V0000023 | 10-06-2025. Patient has HbA1c of 5.4 and creatinine level of 0.9."
+    },
+    {
+        "chunk_id": "P00022_visit_scan_reports_V0000023",
+        "patient_id": "P00022",
+        "chunk_type": "visit_scan_reports_V0000023",
+        "text": "P00022 | visit_scan_reports_V0000023. Patient ID: P00022, Visit ID: V0000023. Scan reports indicate a mild carotid artery plaque deposition detected in the MRI scan.\n\nHeader: [P00156 | patient_medical_records_10-09-2024]\nData: {\n  \"Patient ID\": \"P00156\",\n  \"Visit ID\": \"V0000037\",\n  \"Medical Records\": [\n    {\n      \"History of Present Illness\": [\n        {\n          \"Diabetes Mellitus Type 2\": [\"Onset in 2018\"],\n          \"Hypertension\": [\"Since 2015\"]\n        }\n      ],\n      \"Physical Examination\": [\n        {\n          \"BP\": \"140/90\",\n          \"Weight\": \"68 kg\"\n        },\n        {\n          \"Heart Rate\": \"72 bpm\",\n          \"BMI\": \"30.5\"\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00156 | patient_medical_records_10-09-2024. Patient ID: P00156, Visit ID: V0000037. History of present illness includes diabetes mellitus type 2 onset in 2018 and hypertension since 2015. Physical examination findings include BP of 140/90, weight of 68 kg, heart rate of 72 bpm, and BMI of 30.5.\n\nHeader: [P00234 | patient_clinical_notes_11-15-2024]\nData: {\n  \"Patient ID\": \"P00234\",\n  \"Visit ID\": \"V0000045\",\n  \"Clinical Notes\": [\n    {\n      \"Diagnosis\": [\n        {\n          \"Type 2 Diabetes Mellitus\": [\"Onset in 2016\"],\n          \"Hashimoto's Thyroiditis\": [\"Since 2017\"]\n        }\n      ],\n      \"Symptoms\": [\n        {\n          \"Thirst\": [\"Severe since diagnosis of Type 2 DM\"],\n          \"Fatigue\": [\"Persistent, worsened by recent weight gain\"]\n        },\n        {\n          \"HbA1c\": \"8.5%\"\n        },\n        {\n          \"PAD\": \"Grade 3 for both lower extremities\"\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00234 | patient_clinical_notes_11-15-2024. Patient ID: P00234, Visit ID: V0000045. Clinical notes indicate Type 2 diabetes mellitus onset in 2016 and Hashimoto's thyroiditis since 2017. Symptoms include severe thirst since the diagnosis of type 2 DM, persistent fatigue exacerbated by recent weight gain, HbA1c level of 8.5%, and Grade 3 PAD for both lower extremities.\n\nHeader: [P00365 | patient_medical_records_09-12-2024]\nData: {\n  \"Patient ID\": \"P00365\",\n  \"Visit ID\": \"V0000048\",\n  \"Medical Records\": [\n    {\n      \"History of Present Illness\": [\n        {\n          \"Hypertension\": [\"Since 2017\"],\n          \"Chronic Kidney Disease\": [\"Diagnosed in 2019\"]\n        }\n      ],\n      \"Physical Examination\": [\n        {\n          \"BP\": \"145/88\",\n          \"Weight\": \"69 kg\"\n        },\n        {\n          \"Heart Rate\": \"80 bpm\",\n          \"BMI\": \"32.0\"\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00365 | patient_medical_records_09-12-2024. Patient ID: P00365, Visit ID: V0000048. History of present illness includes hypertension since 2017 and chronic kidney disease diagnosed in 2019. Physical examination findings include BP of 145/88, weight of 69 kg, heart rate of 80 bpm, and BMI of 32.0.\n\nHeader: [P00478 | patient_clinical_notes_10-22-2024]\nData: {\n  \"Patient ID\": \"P00478\",\n  \"Visit ID\": \"V0000059\",\n  \"Clinical Notes\": [\n    {\n      \"Diagnosis\": [\n        {\n          \"Type 1 Diabetes Mellitus\": [\"Onset in 2015\"],\n          \"Autoimmune Disorders\": [\"Hashimoto's Thyroiditis since 2017\"]\n        }\n      ],\n      \"Symptoms\": [\n        {\n          \"Thirst\": [\"Severe and constant\"],\n          \"Fatigue\": [\"Worsens with physical activity\"],\n          \"HbA1c\": \"9.5%\"\n        },\n        {\n          \"PAD\": \"Grade 2 for both lower extremities\"\n        }\n      ]\n    }\n  ]\n}\nOutput:\nP00478 | patient_clinical_notes_10-22-2024. Patient ID: P00478, Visit ID: V0000059. Clinical notes indicate Type 1 diabetes mellitus onset in 2015 and autoimmune disorders including Hashimoto's thyroiditis since 2017. Symptoms include severe and constant thirst, worsening fatigue with physical activity, HbA1c level of 9.5%, and PAD grade 2 for both lower extremities."
+    },
+    {
+        "chunk_id": "P00022_history_overview_V0000022",
+        "patient_id": "P00022",
+        "chunk_type": "history_overview_V0000022",
+        "text": "P00022 | history_overview_V0000022 | 11-03-2025. Patient has BP of 134/86, sugar level of 104, weight of 84 lbs, and pulse rate of 82 bpm with temperature at 98.4\u00b0F."
+    },
+    {
+        "chunk_id": "P00022_history_symptoms_V0000022",
+        "patient_id": "P00022",
+        "chunk_type": "history_symptoms_V0000022",
+        "text": "P00022 | history_symptoms_V0000022. Patient has fatty lumps around joints and mild chest discomfort during exertion."
+    },
+    {
+        "chunk_id": "P00022_history_prev_medication_V0000022",
+        "patient_id": "P00022",
+        "chunk_type": "history_prev_medication_V0000022",
+        "text": "[Header] [P00022 | history_prev_medication_V0000022]\n[Data] {\"Patient ID\": \"P00022\", \"Visit ID\": \"V0000022\", \"Previous Medications\": [\"Dietary control\"]}"
+    },
+    {
+        "chunk_id": "P00022_history_diagnosis_V0000022",
+        "patient_id": "P00022",
+        "chunk_type": "history_diagnosis_V0000022",
+        "text": "P00022 | history_diagnosis_V0000022. Patient ID: P00022, Visit ID: V0000022. Diagnosed with dyslipidemia (visible xanthomas and early carotid artery plaque formation)."
+    },
+    {
+        "chunk_id": "P00022_history_treatment_V0000022",
+        "patient_id": "P00022",
+        "chunk_type": "history_treatment_V0000022",
+        "text": "P00022 | history_treatment_V0000022 | Patient has low fat diet and increased fiber intake. Medications include Rosuvastatin."
+    }
+]

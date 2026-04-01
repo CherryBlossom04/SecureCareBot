@@ -1,0 +1,1112 @@
+[
+    {
+        "test_case_id": "1",
+        "query": "What symptoms is Meenakshi Sundaram currently presenting with?",
+        "domain": "Symptoms",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient is experiencing extreme hunger, frequent urination, unintentional weight loss, and fruity smelling breath.",
+        "expected_chunks": [
+            "P00012_visit_symptoms_V0000013"
+        ],
+        "actual_answer": "The patient presents with a cluster of concerning symptoms...",
+        "target_chunks": [
+            "P00012_visit_symptoms_V0000013"
+        ],
+        "time_taken_ms": 46266.67,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.291,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "2",
+        "query": "List the current medications for Arun Kumar.",
+        "domain": "Medications",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient's current medications include Metformin 1000mg, an increased dose of Insulin Injection, and Atorvastatin 10mg.",
+        "expected_chunks": [
+            "P00011_visit_medication_V0000013"
+        ],
+        "actual_answer": "A patient with a history of diabetes management issues...",
+        "target_chunks": [
+            "P00011_visit_medication_V0000013"
+        ],
+        "time_taken_ms": 45539.88,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.233,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "3",
+        "query": "What were the findings of Revathi Natarajan's thyroid ultrasound?",
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The ultrasound showed a diffuse heterogeneous thyroid texture, which is suggestive of Hashimoto's Thyroiditis.",
+        "expected_chunks": [
+            "P00013_visit_scan_reports_V0000014"
+        ],
+        "actual_answer": "No medical records or details provided...",
+        "target_chunks": [],
+        "time_taken_ms": 24004.54,
+        "worked": "No",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.193,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "4",
+        "query": "Does Arun Kumar have any known allergies or hereditary conditions?",
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient is allergic to Penicillin and has a hereditary history of Type 2 Diabetes.",
+        "expected_chunks": [
+            "P00011_profile_risk"
+        ],
+        "actual_answer": "The patient exhibits known hypersensitivity reactions towards penicillin...",
+        "target_chunks": [
+            "P00011_profile_risk"
+        ],
+        "time_taken_ms": 41323.77,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.42,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "5",
+        "query": "What was Meenakshi Sundaram's HbA1c level in the latest visit?",
+        "domain": "Vitals & Labs",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient's HbA1c level was 10.1.",
+        "expected_chunks": [
+            "P00012_visit_blood_report_V0000013"
+        ],
+        "actual_answer": "The patient's latest blood test indicates a hemoglobin A1c (HbA1c) level at 10.1%...",
+        "target_chunks": [
+            "P00012_visit_blood_report_V0000013"
+        ],
+        "time_taken_ms": 49164.54,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "answer_accuracy_level": "Medium",
+        "answer_similarity_score": 0.556,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "6",
+        "query": "What is the diagnosis for Revathi Natarajan based on her symptoms and scans?",
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Multi-Chunk Synthesis",
+        "intent": "Differential/Diagnostic Reasoning",
+        "expected_answer": "The patient presents with symptoms such as extreme fatigue and memory loss, with scan findings suggestive of Hashimoto's Thyroiditis.",
+        "expected_chunks": [
+            "P00013_visit_symptoms_V0000014",
+            "P00013_visit_scan_reports_V0000014"
+        ],
+        "actual_answer": "The patient presents an MRI scan report for V0000014 indicating diffuse heterogeneous thyroid texture...",
+        "target_chunks": [
+            "P00013_visit_scan_reports_V0000014"
+        ],
+        "time_taken_ms": 55224.28,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "answer_accuracy_level": "Medium",
+        "answer_similarity_score": 0.485,
+        "chunk_accuracy_level": "Partial",
+        "chunk_similarity_score": 0.5
+    },
+    {
+        "test_case_id": "7",
+        "query": "What are the vital signs recorded for Arun Kumar on 15-05-2025?",
+        "domain": "Vitals & Labs",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "Vital signs included a BP of 150/95, sugar level of 235, weight of 81 kg, pulse of 92 bpm, and temperature of 98.8 \u00b0F.",
+        "expected_chunks": [
+            "P00011_visit_overview_V0000013"
+        ],
+        "actual_answer": "The patient recorded on May 15th has hypertension...",
+        "target_chunks": [
+            "P00011_visit_overview_V0000013"
+        ],
+        "time_taken_ms": 48897.06,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.277,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "8",
+        "query": "Identify the symptoms Arun Kumar reported during visit V0000013.",
+        "domain": "Symptoms",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient reported persistent extreme thirst, worsening blurred vision, numbness in lower extremities, and a non-healing foot ulcer on the left heel.",
+        "expected_chunks": [
+            "P00011_visit_symptoms_V0000013"
+        ],
+        "actual_answer": "The patient presents with a constellation of concerning signs...",
+        "target_chunks": [],
+        "time_taken_ms": 66187.15,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "extracted_patient_id": [],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.3,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "9",
+        "query": "What medications was Meenakshi Sundaram previously taking in visit V0000012?",
+        "domain": "Medications",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient was previously taking Metformin.",
+        "expected_chunks": [
+            "P00012_history_prev_medication_V0000012"
+        ],
+        "actual_answer": "The patient previously took Metformin...",
+        "target_chunks": [
+            "P00012_history_prev_medication_V0000012"
+        ],
+        "time_taken_ms": 40057.58,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000012"
+        ],
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "answer_accuracy_level": "High",
+        "answer_similarity_score": 0.875,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "10",
+        "query": "What scan was performed on Meenakshi Sundaram to evaluate her liver?",
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "A FibroScan was performed, which showed evidence of moderate Non-Alcoholic Fatty Liver Disease.",
+        "expected_chunks": [
+            "P00012_visit_scan_reports_V0000013"
+        ],
+        "actual_answer": "The patient underwent an MRI scan to assess the liver...",
+        "target_chunks": [
+            "P00012_visit_scan_reports_V0000013"
+        ],
+        "time_taken_ms": 55395.26,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.248,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "11",
+        "query": "What is the primary diagnosis for Meenakshi Sundaram in the history records?",
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient was diagnosed with Type 1 Diabetes Mellitus with early ketoacidosis symptoms and fatty liver involvement.",
+        "expected_chunks": [
+            "P00012_history_diagnosis_V0000012"
+        ],
+        "actual_answer": "The patient identified as P00012 is clinically characterized by Type 1 Diabetes Mellitus...",
+        "target_chunks": [
+            "P00012_history_diagnosis_V0000012"
+        ],
+        "time_taken_ms": 51667.27,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.441,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "12",
+        "query": "Summarize Revathi Natarajan's profile identity details.",
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Summarization",
+        "expected_answer": "Revathi Natarajan was born on 21-08-1989, lives in Coimbatore, and can be reached at revathi@gmail.com.",
+        "expected_chunks": [
+            "P00013_profile_identity"
+        ],
+        "actual_answer": "A patient with a history of familial predisposition for thyroid issues...",
+        "target_chunks": [
+            "P00013_profile_risk"
+        ],
+        "time_taken_ms": 43930.97,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.133,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "13",
+        "query": "What specific eye condition was found in Arun Kumar's retinal imaging?",
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The imaging revealed moderate non-proliferative diabetic retinopathy and increased macular edema.",
+        "expected_chunks": [
+            "P00011_visit_scan_reports_V0000013"
+        ],
+        "actual_answer": "A patient with a history of penicillin allergy presents an elevated risk factor...",
+        "target_chunks": [
+            "P00011_profile_risk"
+        ],
+        "time_taken_ms": 65752.98,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.241,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "14",
+        "query": "Compare Arun Kumar's sugar levels between visit V0000011 and V0000013.",
+        "domain": "Vitals & Labs",
+        "complexity": "Temporal/Comparative",
+        "intent": "Fact Extraction",
+        "expected_answer": "The sugar level was 210 in visit V0000011 and increased to 235 in visit V0000013.",
+        "expected_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_visit_overview_V0000013"
+        ],
+        "actual_answer": "The patient P00011 has a history of elevated blood pressure (BP) at 140/90...",
+        "target_chunks": [
+            "P00011_visit_blood_report_V0000013",
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012"
+        ],
+        "time_taken_ms": 63025.4,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000013",
+            "V0000011"
+        ],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.371,
+        "chunk_accuracy_level": "Low",
+        "chunk_similarity_score": 0.25
+    },
+    {
+        "test_case_id": "15",
+        "query": "What is the recommended diet for Arun Kumar according to his medical history?",
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "A strict low carbohydrate diet is recommended for the patient.",
+        "expected_chunks": [
+            "P00011_history_treatment_V0000012"
+        ],
+        "actual_answer": "The patient adheres to a strict low-carbohydrate diet...",
+        "target_chunks": [
+            "P00011_history_treatment_V0000012",
+            "P00011_profile_risk",
+            "P00011_history_treatment_V0000011"
+        ],
+        "time_taken_ms": 60329.47,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Medium",
+        "answer_similarity_score": 0.513,
+        "chunk_accuracy_level": "Low",
+        "chunk_similarity_score": 0.333
+    },
+    {
+        "test_case_id": "16",
+        "query": "What are Meenakshi Sundaram's known drug allergies?",
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient is allergic to Sulfa Drugs.",
+        "expected_chunks": [
+            "P00012_profile_risk"
+        ],
+        "actual_answer": "The patient presents with clinical manifestations including excessive thirst...",
+        "target_chunks": [
+            "P00012_history_symptoms_V0000012"
+        ],
+        "time_taken_ms": 46369.16,
+        "worked": "No",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00012"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.386,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "17",
+        "query": "Which medication is Revathi Natarajan currently prescribed for her thyroid condition?",
+        "domain": "Medications",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient is currently prescribed Levothyroxine 50mcg.",
+        "expected_chunks": [
+            "P00013_visit_medication_V0000014"
+        ],
+        "actual_answer": "The patient, identified by Patient ID P00013 during Visit V0000014...",
+        "target_chunks": [
+            "P00013_visit_medication_V0000014"
+        ],
+        "time_taken_ms": 40973.17,
+        "worked": "Yes",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "answer_accuracy_level": "Medium",
+        "answer_similarity_score": 0.45,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "18",
+        "query": "Describe the historical symptoms reported by Arun Kumar in visit V0000012.",
+        "domain": "Symptoms",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient historically reported frequent urination, extreme thirst, tingling sensation in the feet, and a slow-healing foot ulcer.",
+        "expected_chunks": [
+            "P00011_history_vitals_V0000012"
+        ],
+        "actual_answer": "The patient presents with a blood pressure reading of 145/92 mmHg...",
+        "target_chunks": [
+            "P00011_history_symptoms_V0000011",
+            "P00011_history_symptoms_V0000012"
+        ],
+        "time_taken_ms": 61667.74,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000012"
+        ],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.293,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "19",
+        "query": "What was Arun Kumar's HbA1c and Creatinine levels in visit V0000013?",
+        "domain": "Vitals & Labs",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "HbA1c was 9.5 and Creatinine was 1.2.",
+        "expected_chunks": [
+            "P00011_visit_blood_report_V0000013"
+        ],
+        "actual_answer": "The patient with the identifier P00011 presented an HbA1c level of 9.5%...",
+        "target_chunks": [
+            "P00011_visit_blood_report_V0000013",
+            "P00011_visit_overview_V0000013"
+        ],
+        "time_taken_ms": 40579.33,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.175,
+        "chunk_accuracy_level": "Partial",
+        "chunk_similarity_score": 0.5
+    },
+    {
+        "test_case_id": "20",
+        "query": "What was the diagnosis for Arun Kumar during visit V0000012?",
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "expected_answer": "The patient was diagnosed with Uncontrolled Type 2 Diabetes Mellitus with Peripheral Arterial Disease.",
+        "expected_chunks": [
+            "P00011_history_diagnosis_V0000012"
+        ],
+        "actual_answer": "The patient presented for a follow-up visit on the basis of uncontrolled...",
+        "target_chunks": [
+            "P00011_history_diagnosis_V0000012",
+            "P00011_history_diagnosis_V0000011",
+            "P00011_visit_scan_reports_V0000013"
+        ],
+        "time_taken_ms": 83252.37,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000012"
+        ],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.395,
+        "chunk_accuracy_level": "Low",
+        "chunk_similarity_score": 0.333
+    },
+    {
+        "test_case_id": "28",
+        "query": "Compare the blood pressure and sugar levels of Arun Kumar (V0000013) and Meenakshi Sundaram (V0000013).",
+        "domain": "Vitals & Labs",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "expected_answer": "Arun Kumar (V0000013) had a BP of 150/95 and a sugar level of 235 mg/dL. Meenakshi Sundaram (V0000013) had a lower BP of 138/88 but a higher sugar level of 245 mg/dL.",
+        "expected_chunks": [
+            "P00011_visit_overview_V0000013",
+            "P00012_visit_overview_V0000013"
+        ],
+        "actual_answer": "The patient V0000013 exhibits a progression in blood pressure...",
+        "target_chunks": [],
+        "time_taken_ms": 66751.71,
+        "worked": "No",
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "extracted_patient_id": [],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.221,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "29",
+        "query": "What are the current medications for Revathi Natarajan (V0000014) and Karthik Subramanian (V0000015)?",
+        "domain": "Medications",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "expected_answer": "Both patients are prescribed thyroid medication...",
+        "expected_chunks": [
+            "P00013_visit_medication_V0000014",
+            "P00014_visit_medication_V0000015"
+        ],
+        "actual_answer": "The patient P00013 is currently prescribed Levothyroxine...",
+        "target_chunks": [
+            "P00013_visit_medication_V0000014",
+            "P00014_visit_medication_V0000015"
+        ],
+        "time_taken_ms": 44037.09,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000015",
+            "V0000014"
+        ],
+        "extracted_patient_id": [
+            "P00014",
+            "P00013"
+        ],
+        "answer_accuracy_level": "Medium",
+        "answer_similarity_score": 0.641,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "30",
+        "query": "Compare the creatinine levels of Prabhakaran (V0000018) and Muthukumar (V0000019).",
+        "domain": "Vitals & Labs",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "expected_answer": "Prabhakaran (V0000018) has a creatinine level of 2.2, while Muthukumar (V0000019) has a higher creatinine level of 2.6.",
+        "expected_chunks": [
+            "P00017_visit_blood_report_V0000018",
+            "P00018_visit_blood_report_V0000019"
+        ],
+        "actual_answer": "The patient with ID P00018, who visited on March 15th, 2023...",
+        "target_chunks": [
+            "P00018_visit_blood_report_V0000019",
+            "P00017_visit_blood_report_V0000018"
+        ],
+        "time_taken_ms": 70219.23,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000019",
+            "V0000018"
+        ],
+        "extracted_patient_id": [
+            "P00018",
+            "P00017"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.286,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "31",
+        "query": "Contrast the cardiac scan findings for Ravi Chandran (V0000020) and Balasubramanian (V0000021).",
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "expected_answer": "Ravi Chandran's (V0000020) scans showed cardiomegaly...",
+        "expected_chunks": [
+            "P00019_visit_scan_reports_V0000020",
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "actual_answer": "The patient V0000020 presents with X-ray findings suggestive of heart enlargement...",
+        "target_chunks": [
+            "P00019_visit_scan_reports_V0000020",
+            "P00020_visit_scan_reports_V0000021"
+        ],
+        "time_taken_ms": 64747.59,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000021",
+            "V0000020"
+        ],
+        "extracted_patient_id": [
+            "P00020",
+            "P00019"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.388,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "32",
+        "query": "Identify the primary symptoms for Saravanan (V0000022) and Venkatesh (V0000023).",
+        "domain": "Symptoms",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "expected_answer": "Saravanan (V0000022) reported leg pain while walking and yellow patches on eyelids. Venkatesh (V0000023) reported fatty lumps near joints and arcus senilis around the iris.",
+        "expected_chunks": [
+            "P00021_visit_symptoms_V0000022",
+            "P00022_visit_symptoms_V0000023"
+        ],
+        "actual_answer": "Patient V0000022 presents leg pain during ambulation...",
+        "target_chunks": [
+            "P00022_visit_symptoms_V0000023",
+            "P00021_visit_symptoms_V0000022",
+            "P00021_history_symptoms_V0000021",
+            "P00022_history_symptoms_V0000022"
+        ],
+        "time_taken_ms": 45182.94,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000022",
+            "V0000023"
+        ],
+        "extracted_patient_id": [
+            "P00022",
+            "P00021"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.321,
+        "chunk_accuracy_level": "Partial",
+        "chunk_similarity_score": 0.5
+    },
+    {
+        "test_case_id": "33",
+        "query": "Compare the HbA1c results for Suresh Kumar (V0000016) and Manikandan (V0000017).",
+        "domain": "Vitals & Labs",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "expected_answer": "Suresh Kumar (V0000016) had an HbA1c of 5.6, whereas Manikandan (V0000017) had a slightly higher HbA1c of 5.8.",
+        "expected_chunks": [
+            "P00015_visit_blood_report_V0000016",
+            "P00016_visit_blood_report_V0000017"
+        ],
+        "actual_answer": "Both patients, identified as V0000016 and V0000017 have their latest lab results...",
+        "target_chunks": [
+            "P00015_visit_blood_report_V0000016",
+            "P00016_visit_blood_report_V0000017"
+        ],
+        "time_taken_ms": 57720.64,
+        "worked": "Yes",
+        "extracted_patient_name": [
+            "V0000017",
+            "V0000016"
+        ],
+        "extracted_patient_id": [
+            "P00015",
+            "P00016"
+        ],
+        "answer_accuracy_level": "Low",
+        "answer_similarity_score": 0.398,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "34",
+        "query": "Is there any record of a CT scan for Arun Kumar (P00011) during visit V0000013?",
+        "expected_answer": "No. The records for visit V0000013 only mention an MRI scan which showed diabetic retinopathy and macular edema; there is no mention of a CT scan.",
+        "expected_chunks": [
+            "P00011_visit_scan_reports_V0000013"
+        ],
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [
+            "V0000013"
+        ],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "actual_answer": "**P00011 presents with moderate non-proliferative diabetic retinopathy and increased macular edema as per MRI scan results during visit V0000013, alongside elevated HbA1c at **9.5%** indicating poor glycemic control. Current medications include Metformin 1000mg, Insulin Injection (Increased Dose), and Atorvastatin 10mg; however, the patient's BP of **150/95 mmHg** suggests possible hypertension.\n\nConsidering current findings: Evaluate potential adjustment in antihypertensive therapy alongside strict glycemic control optimization to address HbA1c levels and retinopathy progression, possibly including **Metformin titration or addition of a second antidiabetic agent**.\n",
+        "target_chunks": [
+            "P00011_visit_scan_reports_V0000013",
+            "P00011_history_treatment_V0000012",
+            "P00011_visit_blood_report_V0000013",
+            "P00011_visit_medication_V0000013",
+            "P00011_visit_overview_V0000013",
+            "P00011_history_diagnosis_V0000012",
+            "P00011_visit_symptoms_V0000013",
+            "P00011_history_overview_V0000011",
+            "P00011_profile_risk",
+            "P00011_history_overview_V0000012"
+        ],
+        "time_taken_ms": 272393.47,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.059,
+        "chunk_accuracy_level": "Low",
+        "chunk_similarity_score": 0.1
+    },
+    {
+        "test_case_id": "35",
+        "query": "Based on her thyroid diagnosis, has Revathi Natarajan (P00013) undergone a TSH lab test in visit V0000014?",
+        "expected_answer": "No. While she has a diagnosis suggestive of Hashimoto's, her blood report for visit V0000014 only contains HbA1c (5.4) and Creatinine (0.8) levels; TSH is missing from the record.",
+        "expected_chunks": [
+            "P00013_visit_blood_report_V0000014",
+            "P00013_visit_scan_reports_V0000014"
+        ],
+        "domain": "Vitals & Labs",
+        "complexity": "Multi-Chunk Synthesis",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [
+            "V0000014"
+        ],
+        "extracted_patient_id": [
+            "P00013"
+        ],
+        "actual_answer": "**P00013's recent blood report from visit V0000014 shows an **HbA1c level at 5.4%**, indicating normal glucose control and no indication of diabetes-related issues; creatinine is within the standard range at **0.8 mg/dL** suggesting good kidney function. No mention or results from a TSH lab test are provided in this context for P00013, thus specific medications related to thyroid management cannot be suggested without further information on their condition and treatment history regarding the thyroid diagnosis.\n\nPermission not given.",
+        "target_chunks": [
+            "P00013_visit_blood_report_V0000014"
+        ],
+        "time_taken_ms": 206514.01,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.135,
+        "chunk_accuracy_level": "Partial",
+        "chunk_similarity_score": 0.5
+    },
+    {
+        "test_case_id": "36",
+        "query": "Analyze the trend of Arun Kumar\u2019s body weight across visits V0000011, V0000012, and V0000013.",
+        "expected_answer": "Arun Kumar's weight is showing a decreasing trend: it was 83 kg in V0000011, 82 lbs (~37 kg) in V0000012, and 81 kg in V0000013.",
+        "expected_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012",
+            "P00011_visit_overview_V0000013"
+        ],
+        "domain": "Vitals & Labs",
+        "complexity": "Temporal/Comparative",
+        "intent": "Summarization",
+        "extracted_patient_name": [
+            "V0000012",
+            "V0000011",
+            "V0000013"
+        ],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "actual_answer": "**P00011's Body Weight Trend Across Visits V0000011 to V0000013: Decreased from 83 kg (V0000011) to 82 lbs (V0000012), and further decreased to 81 kg (V0000013).**\n\nConsidering the upward trend in BP, **Metformin initiation at a starting dose of 500mg daily may be beneficial for glycemic control. Weight management strategies should also continue to monitor and potentially adjust as needed based on patient response.**",
+        "target_chunks": [
+            "P00011_history_overview_V0000011",
+            "P00011_history_overview_V0000012",
+            "P00011_visit_overview_V0000013"
+        ],
+        "time_taken_ms": 253553.02,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.092,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "37",
+        "query": "What is the current prescribed dosage of Metformin for Arun Kumar as of his most recent visit?",
+        "expected_answer": "The current dosage is 1000mg. (Note: This is an increase from the 500mg dose recorded in visit V0000012).",
+        "expected_chunks": [
+            "P00011_visit_medication_V0000013",
+            "P00011_history_prev_medication_V0000012"
+        ],
+        "domain": "Medications",
+        "complexity": "Temporal/Comparative",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00011"
+        ],
+        "actual_answer": "P00011 has been prescribed **Metformin 1000mg** alongside an increased dose of insulin injection, as well as atorvastatin 10mg during their most recent visit (V0000013). No additional medication dosages or treatment protocols are requested.\n",
+        "target_chunks": [
+            "P00011_visit_medication_V0000013"
+        ],
+        "time_taken_ms": 64830.82,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.115,
+        "chunk_accuracy_level": "Partial",
+        "chunk_similarity_score": 0.5
+    },
+    {
+        "test_case_id": "38",
+        "query": "Identify the patient who presented with 'ammonia breath' and 'puffy eyes'. What is their latest creatinine level?",
+        "expected_answer": "The patient is Muthukumar (P00018), and his latest creatinine level is 2.6.",
+        "expected_chunks": [
+            "P00018_visit_symptoms_V0000019",
+            "P00018_visit_blood_report_V0000019"
+        ],
+        "domain": "Symptoms",
+        "complexity": "Multi-Chunk Synthesis",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [],
+        "actual_answer": null,
+        "target_chunks": [],
+        "time_taken_ms": 72434.59,
+        "worked": "No",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.0,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "39",
+        "query": "Which patient has a diagnosis of 'Uncontrolled Type 2 Diabetes' and what were their scan results for the eyes?",
+        "expected_answer": "The patient is Arun Kumar (P00011). His scan results showed moderate non-proliferative diabetic retinopathy and increased macular edema.",
+        "expected_chunks": [
+            "P00011_history_diagnosis_V0000012",
+            "P00011_visit_scan_reports_V0000013"
+        ],
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Multi-Chunk Synthesis",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [],
+        "actual_answer": null,
+        "target_chunks": [],
+        "time_taken_ms": 49416.51,
+        "worked": "No",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.0,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "40",
+        "query": "List all patients who have a recorded allergy to 'Dust'.",
+        "expected_answer": "Karthik Subramanian (P00014) is the only patient with a recorded allergy to dust.",
+        "expected_chunks": [
+            "P00014_profile_risk"
+        ],
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [],
+        "actual_answer": "**P00014 presents an allergy to dust, with hereditary risks including thyroid disease; P00012 is sensitive to Sulfa Drugs alongside Diabetes risk factors; no allergies or relevant conditions noted for P00015 and P00018.\n\nFor **P00014**, avoiding dust exposure in clinical settings may be advisable due to allergy risks. For **P00012**, Sulfa Drug administration should be carefully considered or alternative medications explored given the drug sensitivity and diabetes predisposition; for P00015 and P00018 with no allergies reported, standard care protocols can proceed.",
+        "target_chunks": [
+            "profile_risk"
+        ],
+        "time_taken_ms": 47482.34,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.045,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "41",
+        "query": "Compare the hereditary risks of Suresh Kumar (P00015) and Manikandan (P00016).",
+        "expected_answer": "Suresh Kumar is predisposed to Hypertension, while Manikandan is at risk for hereditary hypertension.",
+        "expected_chunks": [
+            "P00015_profile_risk",
+            "P00016_profile_risk"
+        ],
+        "domain": "Patient History/Profile",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00016",
+            "P00015"
+        ],
+        "actual_answer": "**Patient P00016 has mild left ventricular hypertrophy, elevated BP (165/102), high sugar level (115) with a history of chest pain and shortness of breath. Current medication is Losartan. **\n**Patient P00015 also has mild left ventricular hypertrophy, higher BP reading at 170/105 compared to P00016; however, both patients are on antihypertensive therapy with amlodipine and losartan. HbA1c levels for both (5.8% in P00016 vs. 5.6% in P00015) suggest a need to monitor glucose control closely, potentially considering **Metformin** initiation if lifestyle modifications are insu=/\n\nP2: Consider initiating Metformin for both patients due to their elevated HbA1c levels. Monitor blood pressure and adjust antihypertensive medications as needed based on individual response.",
+        "target_chunks": [
+            "P00016_profile_risk",
+            "P00015_profile_risk",
+            "P00016_visit_scan_reports_V0000017",
+            "P00015_visit_blood_report_V0000016",
+            "P00016_visit_blood_report_V0000017",
+            "P00016_visit_overview_V0000017",
+            "P00016_visit_symptoms_V0000017",
+            "P00016_visit_medication_V0000017",
+            "P00015_visit_overview_V0000016",
+            "P00015_visit_medication_V0000016"
+        ],
+        "time_taken_ms": 287613.46,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.005,
+        "chunk_accuracy_level": "Low",
+        "chunk_similarity_score": 0.2
+    },
+    {
+        "test_case_id": "42",
+        "query": "What are the latest heart-related scan findings for Manikandan (P00016)?",
+        "expected_answer": "An MRI indicated mild concentric left ventricular hypertrophy, evaluated for heart muscle thickness.",
+        "expected_chunks": [
+            "P00016_visit_scan_reports_V0000017"
+        ],
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00016"
+        ],
+        "actual_answer": "**Mild Concentric Left Ventricular Hypertrophy Detected in P00016's Heart Scan**  \nP00016 exhibits mild concentric left ventricular hypertrophy, suggesting increased heart muscle mass. No additional clinical markers or treatment protocols provided without further context on patient history and current medications/treatments. \n\n*Conditional Treatment Advice: Not applicable at this stage.*  \nPermission not given for specific medical advice due to lack of detailed information.",
+        "target_chunks": [
+            "P00016_visit_scan_reports_V0000017"
+        ],
+        "time_taken_ms": 193863.53,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.164,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    },
+    {
+        "test_case_id": "43",
+        "query": "Which patient is currently taking 'Atorvastatin' and what symptom prompted this treatment?",
+        "expected_answer": "Saravanan (P00021) is taking Atorvastatin; his symptoms include leg pain while walking and yellow patches on eyelids (indicative of high cholesterol/dyslipidemia).",
+        "expected_chunks": [
+            "P00021_visit_medication_V0000022",
+            "P00021_visit_symptoms_V0000022"
+        ],
+        "domain": "Medications",
+        "complexity": "Multi-Chunk Synthesis",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [],
+        "actual_answer": "**Patient P00011 is on Metformin (1000mg), Insulin Injection with increased dose, Atorvastatin (10mg). Symptoms include extreme thirst, blurred vision, numbness in lower extremities, and a non-healing foot ulcer.**\n\n*Consider evaluating the ade\u58eb\u7eed\u8865\u5145 treatment efficacy for P00011 due to persistent symptoms despite current regimen.* \n",
+        "target_chunks": [
+            "visit_medication",
+            "visit_symptoms"
+        ],
+        "time_taken_ms": 69155.9,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.026,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "44",
+        "query": "What is the weight recorded for Prabhakaran (P00017) and how does it compare to Venkatesh (P00022) in their latest visits?",
+        "expected_answer": "Prabhakaran's weight is 76 lbs, which is significantly lower than Venkatesh's weight of 83 kg.",
+        "expected_chunks": [
+            "P00017_visit_overview_V0000018",
+            "P00022_visit_overview_V0000023"
+        ],
+        "domain": "Vitals & Labs",
+        "complexity": "Cross-Patient Comparison",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00017",
+            "P00022"
+        ],
+        "actual_answer": "**Weight for P00017 is recorded at 76 lbs during the latest visit on 10-04-2025, while P00022's weight was noted as 83 kg in their most recent assessment dated 13-04-2025.**\n\n*For comparative analysis: Convert both weights to the same unit (lbs), with **P00022 weighing approximately 183 lbs, which is significantly higher than P00017's weight of 76 lbs. This suggests a need for individualized monitoring and potential adjustments in treatment plans considering their respective weights.*\n\n",
+        "target_chunks": [
+            "P00022_history_overview_V0000022",
+            "P00017_visit_overview_V0000018",
+            "P00022_visit_overview_V0000023"
+        ],
+        "time_taken_ms": 226286.61,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.058,
+        "chunk_accuracy_level": "Partial",
+        "chunk_similarity_score": 0.667
+    },
+    {
+        "test_case_id": "45",
+        "query": "Based on the symptoms of 'depression' and 'hoarse voice', which patient is being treated and what is the medication?",
+        "expected_answer": "The patient is Karthik Subramanian (P00014), and he is being treated with Levothyroxine.",
+        "expected_chunks": [
+            "P00014_visit_symptoms_V0000015",
+            "P00014_visit_medication_V0000015"
+        ],
+        "domain": "Medications",
+        "complexity": "Multi-Chunk Synthesis",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [],
+        "actual_answer": "**Context Summary:** Patient P00014 exhibits symptoms of slow heart rate, depression, muscle aches, and hoarse voice. Treatment includes Levothyroxine for thyroid function irregularities potentially contributing to these conditions.  \n\n**Conditional Treatment Advice:** For the presentation of **depression** with a symptomatic component like **hoarse voice** in P00014, consider evaluating and possibly initiating an antidepressant such as **Sertraline 50mg daily**.\n",
+        "target_chunks": [],
+        "time_taken_ms": 66951.8,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.069,
+        "chunk_accuracy_level": "None",
+        "chunk_similarity_score": 0.0
+    },
+    {
+        "test_case_id": "46",
+        "query": "Review the visit history of Saravanan (P00021). Has his blood pressure changed between visit V0000021 and V0000022?",
+        "expected_answer": "Yes, his BP was 138/86 in visit V0000021 and decreased slightly to 135/85 in visit V0000022.",
+        "expected_chunks": [
+            "P00021_history_overview_V0000021",
+            "P00021_visit_overview_V0000022"
+        ],
+        "domain": "Vitals & Labs",
+        "complexity": "Temporal/Comparative",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [
+            "V0000021",
+            "V0000022"
+        ],
+        "extracted_patient_id": [
+            "P00021"
+        ],
+        "actual_answer": "**Blood Pressure (BP):** Decreased from **138/86 to an unspecified value in V0000022**, no change provided for the second visit's BP measurement.  \nNo medication or treatment protocol changes requested; hence, specific recommendations cannot be made without additional data on blood pressure trends and patient health status between visits 0000021 and 0000022.\n\n",
+        "target_chunks": [
+            "P00021_history_overview_V0000021",
+            "P00021_visit_blood_report_V0000022"
+        ],
+        "time_taken_ms": 140484.62,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.088,
+        "chunk_accuracy_level": "Low",
+        "chunk_similarity_score": 0.333
+    },
+    {
+        "test_case_id": "47",
+        "query": "What specific findings in Muthukumar\u2019s (P00018) renal ultrasound suggest chronic damage?",
+        "expected_answer": "Both kidneys appeared shrunken with cortical thinning.",
+        "expected_chunks": [
+            "P00018_visit_scan_reports_V0000019"
+        ],
+        "domain": "Diagnostics/Imaging",
+        "complexity": "Single-Point Lookup",
+        "intent": "Fact Extraction",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00018"
+        ],
+        "actual_answer": "**Renal ultrasound findings for P00018 indicate shrunken kidnefiles with cortical thinning suggestive of chronic damage. Current medication includes Diuretics, and the patient has a history of Kidney Disease alongside symptoms like puffy eyes and persistent fatigue which may correlate to worsening renal function as evidenced by elevated creatinine levels (2.6).\n\n**Consider reviewing current diuretic therapy for potential adjustment, possibly incorporating ACE inhibitors or ARBs if not contraindicated due to the patient's history of Kidney Disease and hypertension indicated by BP 148/90.\n",
+        "target_chunks": [
+            "P00018_visit_scan_reports_V0000019",
+            "P00018_visit_medication_V0000019",
+            "P00018_profile_risk",
+            "P00018_visit_symptoms_V0000019",
+            "P00018_visit_blood_report_V0000019",
+            "P00018_visit_overview_V0000019"
+        ],
+        "time_taken_ms": 152331.74,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.025,
+        "chunk_accuracy_level": "Low",
+        "chunk_similarity_score": 0.167
+    },
+    {
+        "test_case_id": "48",
+        "query": "Summarize the profile risk for Balasubramanian (P00020).",
+        "expected_answer": "Balasubramanian has no known allergies but is at risk for Heart Disease due to hereditary factors.",
+        "expected_chunks": [
+            "P00020_profile_risk"
+        ],
+        "domain": "Patient History/Profile",
+        "complexity": "Single-Point Lookup",
+        "intent": "Summarization",
+        "extracted_patient_name": [],
+        "extracted_patient_id": [
+            "P00020"
+        ],
+        "actual_answer": "Patient P00020 presents with a **profile risk** of developing heart disease, notwithstanding the absence of known drug allergies which simplifies potential treatment plans involving common cardiovascular medications such as beta-blockers or statins. No specific treatments are suggested at this stage due to lacking detailed medical history and current health status information.\n\nPermission not given for personalized recommendations on **medications, dosages** without further clinical data.",
+        "target_chunks": [
+            "P00020_profile_risk"
+        ],
+        "time_taken_ms": 114919.64,
+        "worked": "Yes",
+        "answer_accuracy_level": "None",
+        "answer_similarity_score": 0.014,
+        "chunk_accuracy_level": "Exact",
+        "chunk_similarity_score": 1.0
+    }
+]

@@ -1,0 +1,987 @@
+[
+  {
+    "Patient ID": "P00011",
+    "name": "Arun Kumar",
+    "DOB": "14-05-1986",
+    "Address": "Anna Nagar West, Chennai, Tamilnadu, India- 600040",
+    "Phone": "91+9841023456",
+    "Email": "arunkumar@gmail.com",
+    "Allergies": [
+      "Penicillin"
+    ],
+    "Hereditary Diseases": [
+      "Type 2 Diabetes"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000013",
+        "Date": "15-05-2025",
+        "BP": "150/95",
+        "Sugar Level": "235",
+        "Weight": 81,
+        "Height": 171,
+        "Pulse": 92,
+        "Temperature": 98.8,
+        "Current Medications": [
+          "Metformin 1000mg",
+          "Insulin Injection (Increased Dose)",
+          "Atorvastatin 10mg"
+        ],
+        "Symptoms": [
+          "Persistent extreme thirst",
+          "Vision blurring worsening",
+          "Numbness in lower extremities",
+          "Non-healing foot ulcer on left heel"
+        ],
+        "Blood Report": {
+          "HbA1c": 9.5,
+          "Creatinine": 1.2
+        },
+        "Scan Reports": [
+          {
+            "MRI Scan": [
+              {
+                "Retinal Imaging": {
+                  "Clinical Indication": "Worsening blurred vision in diabetic patient.",
+                  "Findings": [
+                    {
+                      "Eye": "Moderate non-proliferative diabetic retinopathy; increased macular edema."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": [
+      {
+        "Visit ID": "V0000012",
+        "Date": "10-04-2025",
+        "BP": "145/92",
+        "Sugar Level": "220",
+        "Weight": 82,
+        "Height": 171,
+        "Pulse": 90,
+        "Temperature": 98.6,
+        "Blood Report": {
+          "HbA1c": 9.2,
+          "Creatinine": 1.1
+        },
+        "Scan Reports": [
+          {
+            "MRI Scan": [
+              {
+                "Retinal Imaging": {
+                  "Clinical Indication": "Long standing diabetes with blurred vision.",
+                  "Findings": [
+                    {
+                      "Eye": "Mild diabetic retinopathy with microaneurysms."
+                    }
+                  ]
+                }
+              },
+              {
+                "Doppler Ultrasound": {
+                  "Clinical Indication": "Check blood flow in lower limbs.",
+                  "Findings": [
+                    {
+                      "Arteries": "Reduced peripheral arterial blood flow suggestive of early PAD."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "Previous Medications": [
+          "Metformin 500mg",
+          "Insulin Injection"
+        ],
+        "Symptoms": [
+          "Frequent urination",
+          "Extreme thirst",
+          "Tingling sensation in feet",
+          "Slow healing foot ulcer"
+        ],
+        "Diagnosis": [
+          "Uncontrolled Type 2 Diabetes Mellitus with Peripheral Arterial Disease."
+        ],
+        "Diet": [
+          "Strict low carbohydrate diet"
+        ]
+      },
+      {
+        "Visit ID": "V0000011",
+        "Date": "15-03-2025",
+        "BP": "140/90",
+        "Sugar Level": "210",
+        "Weight": 83,
+        "Height": 171,
+        "Pulse": 88,
+        "Temperature": 98.4,
+        "Blood Report": {
+          "HbA1c": 8.8,
+          "Creatinine": 1.0
+        },
+        "Previous Medications": [
+          "Metformin"
+        ],
+        "Symptoms": [
+          "Frequent urination",
+          "Fatigue"
+        ],
+        "Diagnosis": [
+          "Poorly controlled Type 2 Diabetes Mellitus with early peripheral neuropathy."
+        ],
+        "Medications": [
+          "Metformin",
+          "Lifestyle modification"
+        ],
+        "Diet": [
+          "Low carbohydrate diet"
+        ]
+      }
+    ]
+  },
+  {
+    "Patient ID": "P00012",
+    "name": "Meenakshi Sundaram",
+    "DOB": "03-09-1978",
+    "Address": "KK Nagar, Madurai, Tamil Nadu, India- 625020",
+    "Phone": "91+9791212345",
+    "Email": "meenakshi@gmail.com",
+    "Allergies": [
+      "Sulfa Drugs"
+    ],
+    "Hereditary Diseases": [
+      "Diabetes"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000013",
+        "Date": "12-04-2025",
+        "Age": 46,
+        "BP": "138/88",
+        "Sugar Level": "245",
+        "Weight": 75,
+        "Height": 161,
+        "Pulse": 92,
+        "Temperature": 99.1,
+        "Current Medications": [
+          "Insulin",
+          "Metformin"
+        ],
+        "Symptoms": [
+          "Extreme hunger",
+          "Frequent urination",
+          "Unintentional weight loss",
+          "Fruity smelling breath"
+        ],
+        "Blood Report": {
+          "HbA1c": 10.1,
+          "Creatinine": 1.3
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "FibroScan": {
+                  "Clinical Indication": "Evaluate fatty liver in diabetic patient.",
+                  "Findings": [
+                    {
+                      "Liver": "Evidence of moderate Non-Alcoholic Fatty Liver Disease."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": [
+      {
+        "Visit ID": "V0000012",
+        "Date": "10-03-2025",
+        "Age": 46,
+        "BP": "135/85",
+        "Sugar Level": "210",
+        "Weight": 77,
+        "Height": 161,
+        "Pulse": 89,
+        "Temperature": 98.7,
+        "Blood Report": {
+          "HbA1c": 9.5,
+          "Creatinine": 1.2
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": []
+          }
+        ],
+        "Previous Medications": [
+          "Metformin"
+        ],
+        "Symptoms": [
+          "Thirst",
+          "Fatigue"
+        ],
+        "Diagnosis": [
+          "The patient is diagnosed with Type 1 Diabetes Mellitus presenting with early ketoacidosis symptoms and fatty liver involvement."
+        ],
+        "Medications": [
+          "Insulin therapy",
+          "Metformin"
+        ],
+        "Diet": [
+          "Controlled carbohydrate diabetic diet"
+        ]
+      }
+    ]
+  },
+  {
+    "Patient ID": "P00013",
+    "name": "Revathi Natarajan",
+    "DOB": "21-08-1989",
+    "Address": "Gandhipuram, Coimbatore, Tamil Nadu, India- 641012",
+    "Phone": "91+9843012345",
+    "Email": "revathi@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "Thyroid Disorder"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000014",
+        "Date": "11-04-2025",
+        "Age": 35,
+        "BP": "118/78",
+        "Sugar Level": "95",
+        "Weight": 68,
+        "Height": 165,
+        "Pulse": 58,
+        "Temperature": 97.8,
+        "Current Medications": [
+          "Levothyroxine 50mcg"
+        ],
+        "Symptoms": [
+          "Extreme fatigue",
+          "Constipation",
+          "Puffy face",
+          "Thinning eyebrows",
+          "Memory loss"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.4,
+          "Creatinine": 0.8
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "Thyroid Ultrasound": {
+                  "Clinical Indication": "Suspected hypothyroidism and thyroid enlargement.",
+                  "Findings": [
+                    {
+                      "Thyroid": "Diffuse heterogeneous thyroid texture suggestive of Hashimoto’s Thyroiditis."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00014",
+    "name": "Karthik Subramanian",
+    "DOB": "02-02-1983",
+    "Address": "Velachery, Chennai, Tamil Nadu, India- 600042",
+    "Phone": "91+9791312345",
+    "Email": "karthik@gmail.com",
+    "Allergies": [
+      "Dust"
+    ],
+    "Hereditary Diseases": [
+      "Thyroid Disease"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000015",
+        "Date": "12-04-2025",
+        "Age": 42,
+        "BP": "115/75",
+        "Sugar Level": "92",
+        "Weight": 80,
+        "Pulse": 56,
+        "Temperature": 97.7,
+        "Current Medications": [
+          "Levothyroxine"
+        ],
+        "Symptoms": [
+          "Slow heart rate",
+          "Depression",
+          "Muscle aches",
+          "Hoarse voice"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.5,
+          "Creatinine": 0.9
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "RAIU Scan": {
+                  "Clinical Indication": "Assessment of thyroid iodine uptake.",
+                  "Findings": [
+                    {
+                      "Thyroid": "Low iodine uptake consistent with hypothyroidism."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00015",
+    "name": "Suresh Kumar",
+    "DOB": "18-05-1976",
+    "Address": "Thillai Nagar, Trichy, Tamil Nadu, India- 620018",
+    "Phone": "91+9443212345",
+    "Email": "suresh@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "Hypertension"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000016",
+        "Date": "13-04-2025",
+        "Age": 48,
+        "BP": "170/105",
+        "Sugar Level": "110",
+        "Weight": 84,
+        "Pulse": 95,
+        "Temperature": 98.6,
+        "Current Medications": [
+          "Amlodipine",
+          "Losartan"
+        ],
+        "Symptoms": [
+          "Severe headache",
+          "Dizziness",
+          "Nosebleeds",
+          "Blurred vision"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.6,
+          "Creatinine": 1
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": [
+              {
+                "ECG": {
+                  "Clinical Indication": "Evaluation of chronic hypertension effects.",
+                  "Findings": [
+                    {
+                      "Heart": "Evidence of left ventricular hypertrophy."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "MRI Scan": []
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00016",
+    "name": "Manikandan",
+    "DOB": "27-01-1981",
+    "Address": "Tiruppur Road, Erode, Tamil Nadu, India- 638001",
+    "Phone": "91+9842712345",
+    "Email": "mani@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "Hypertension"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000017",
+        "Date": "12-04-2025",
+        "Age": 44,
+        "BP": "165/102",
+        "Sugar Level": "115",
+        "Weight": 90,
+        "Pulse": 100,
+        "Temperature": 98.5,
+        "Current Medications": [
+          "Losartan"
+        ],
+        "Symptoms": [
+          "Chest pain",
+          "Confusion",
+          "Shortness of breath"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.8,
+          "Creatinine": 1.1
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "Echocardiogram": {
+                  "Clinical Indication": "Evaluate heart muscle thickness.",
+                  "Findings": [
+                    {
+                      "Heart": "Mild concentric left ventricular hypertrophy."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00017",
+    "name": "Prabhakaran",
+    "DOB": "05-06-1968",
+    "Address": "Tambaram, Chennai, Tamil Nadu, India- 600045",
+    "Phone": "91+9791412345",
+    "Email": "prabha@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "Kidney Disease"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000018",
+        "Date": "10-04-2025",
+        "Age": 56,
+        "BP": "150/90",
+        "Sugar Level": "120",
+        "Weight": 76,
+        "Pulse": 88,
+        "Temperature": 98.2,
+        "Current Medications": [
+          "ACE Inhibitors"
+        ],
+        "Symptoms": [
+          "Swollen ankles",
+          "Persistent itching",
+          "Loss of appetite"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.7,
+          "Creatinine": 2.2
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": [
+              {
+                "Renal CT Urogram": {
+                  "Clinical Indication": "Assess kidney structure.",
+                  "Findings": [
+                    {
+                      "Kidneys": "Reduced kidney size indicating chronic kidney disease."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "MRI Scan": []
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00018",
+    "name": "Muthukumar",
+    "DOB": "09-03-1970",
+    "Address": "Namakkal Main Road, Salem, Tamil Nadu, India- 636005",
+    "Phone": "91+9842312345",
+    "Email": "muthu@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "Kidney Disease"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000019",
+        "Date": "13-04-2025",
+        "Age": 55,
+        "BP": "148/90",
+        "Sugar Level": "115",
+        "Weight": 70,
+        "Pulse": 84,
+        "Temperature": 98.1,
+        "Current Medications": [
+          "Diuretics"
+        ],
+        "Symptoms": [
+          "Puffy eyes",
+          "Persistent fatigue",
+          "Ammonia breath"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.4,
+          "Creatinine": 2.6
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "Renal Ultrasound": {
+                  "Clinical Indication": "Evaluate kidney size and damage.",
+                  "Findings": [
+                    {
+                      "Kidneys": "Both kidneys appear shrunken with cortical thinning."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00019",
+    "name": "Ravi Chandran",
+    "DOB": "14-04-1965",
+    "Address": "Adyar, Chennai, Tamil Nadu, India- 600020",
+    "Phone": "91+9840011111",
+    "Email": "ravi@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "Heart Disease"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000020",
+        "Date": "11-04-2025",
+        "Age": 60,
+        "BP": "140/88",
+        "Sugar Level": "108",
+        "Weight": 88,
+        "Pulse": 105,
+        "Temperature": 98.5,
+        "Current Medications": [
+          "Furosemide",
+          "Beta Blocker"
+        ],
+        "Symptoms": [
+          "Shortness of breath",
+          "Orthopnea",
+          "Rapid heartbeat"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.5,
+          "Creatinine": 1.2
+        },
+        "Scan Reports": [
+          {
+            "XRay": {
+              "Clinical Indication": "Heart failure symptoms.",
+              "Findings": [
+                {
+                  "Heart": "Cardiomegaly and pulmonary edema present."
+                }
+              ]
+            }
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "Cardiac MRI": {
+                  "Clinical Indication": "Assess heart muscle damage.",
+                  "Findings": [
+                    {
+                      "Heart": "Reduced ejection fraction with myocardial scarring."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00020",
+    "name": "Balasubramanian",
+    "DOB": "22-07-1962",
+    "Address": "Thanjavur Main Road, Thanjavur, Tamil Nadu, India- 613001",
+    "Phone": "91+9443312345",
+    "Email": "bala@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "Heart Disease"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000021",
+        "Date": "12-04-2025",
+        "Age": 62,
+        "BP": "138/85",
+        "Sugar Level": "105",
+        "Weight": 90,
+        "Pulse": 110,
+        "Temperature": 98.4,
+        "Current Medications": [
+          "ACE Inhibitors",
+          "Diuretics"
+        ],
+        "Symptoms": [
+          "Breathlessness",
+          "Distended neck veins",
+          "Night breathing difficulty"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.6,
+          "Creatinine": 1.1
+        },
+        "Scan Reports": [
+          {
+            "XRay": [
+              {
+                "Chest XRay": {
+                  "Clinical Indication": "Heart failure assessment.",
+                  "Findings": [
+                    {
+                      "Lungs": "Pulmonary edema with enlarged cardiac silhouette."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": []
+          }
+        ]
+      }
+    ],
+    "Patient History": []
+  },
+  {
+    "Patient ID": "P00021",
+    "name": "Saravanan",
+    "DOB": "11-11-1979",
+    "Address": "Puduchatram Road, Namakkal, Tamil Nadu, India- 637001",
+    "Phone": "91+9791712345",
+    "Email": "saravanan@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "High Cholesterol"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000022",
+        "Date": "12-04-2025",
+        "Age": 45,
+        "BP": "135/85",
+        "Sugar Level": "100",
+        "Weight": 85,
+        "Pulse": 82,
+        "Temperature": 98.6,
+        "Current Medications": [
+          "Atorvastatin"
+        ],
+        "Symptoms": [
+          "Leg pain while walking",
+          "Yellow patches on eyelids"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.5,
+          "Creatinine": 0.9
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": [
+              {
+                "CT Heart Calcium Score": {
+                  "Clinical Indication": "Assess coronary artery plaque.",
+                  "Findings": [
+                    {
+                      "Heart": "Moderate calcified plaque buildup detected."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "MRI Scan": []
+          }
+        ]
+      }
+    ],
+    "Patient History": [
+      {
+        "Visit ID": "V0000021",
+        "Date": "10-03-2025",
+        "Age": 45,
+        "BP": "138/86",
+        "Sugar Level": "102",
+        "Weight": 86,
+        "Pulse": 84,
+        "Temperature": 98.5,
+        "Blood Report": {
+          "HbA1c": 5.6,
+          "Creatinine": 0.9
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": [
+              {
+                "CT Heart Calcium Score": {
+                  "Clinical Indication": "Evaluate coronary artery plaque risk.",
+                  "Findings": [
+                    {
+                      "Heart": "Early calcified plaque deposits detected in coronary arteries."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "MRI Scan": []
+          }
+        ],
+        "Previous Medications": [
+          "Lifestyle modification"
+        ],
+        "Symptoms": [
+          "Leg pain during walking",
+          "Mild fatigue"
+        ],
+        "Diagnosis": [
+          "Patient diagnosed with dyslipidemia characterized by elevated LDL cholesterol levels increasing the risk of coronary artery disease."
+        ],
+        "Medications": [
+          "Atorvastatin"
+        ],
+        "Diet": [
+          "Low cholesterol diet",
+          "Avoid fried foods"
+        ]
+      }
+    ]
+  },
+  {
+    "Patient ID": "P00022",
+    "name": "Venkatesh",
+    "DOB": "06-04-1982",
+    "Address": "Villivakkam, Chennai, Tamil Nadu, India- 600049",
+    "Phone": "91+9840912345",
+    "Email": "venkatesh@gmail.com",
+    "Allergies": [
+      "None"
+    ],
+    "Hereditary Diseases": [
+      "High Cholesterol"
+    ],
+    "Clinical Data": [
+      {
+        "Visit ID": "V0000023",
+        "Date": "13-04-2025",
+        "Age": 43,
+        "BP": "132/84",
+        "Sugar Level": "102",
+        "Weight": 83,
+        "Pulse": 80,
+        "Temperature": 98.3,
+        "Current Medications": [
+          "Rosuvastatin"
+        ],
+        "Symptoms": [
+          "Fatty lumps near joints",
+          "Arcus senilis around iris"
+        ],
+        "Blood Report": {
+          "HbA1c": 5.4,
+          "Creatinine": 0.9
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "Carotid Ultrasound": {
+                  "Clinical Indication": "Check artery blockage risk.",
+                  "Findings": [
+                    {
+                      "Arteries": "Mild carotid artery plaque deposition detected."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Patient History": [
+      {
+        "Visit ID": "V0000022",
+        "Date": "11-03-2025",
+        "Age": 42,
+        "BP": "134/86",
+        "Sugar Level": "104",
+        "Weight": 84,
+        "Pulse": 82,
+        "Temperature": 98.4,
+        "Blood Report": {
+          "HbA1c": 5.5,
+          "Creatinine": 0.9
+        },
+        "Scan Reports": [
+          {
+            "XRay": []
+          },
+          {
+            "CT Scan": []
+          },
+          {
+            "MRI Scan": [
+              {
+                "Carotid Ultrasound": {
+                  "Clinical Indication": "Evaluate carotid artery plaque formation.",
+                  "Findings": [
+                    {
+                      "Arteries": "Early carotid artery plaque formation detected indicating increased stroke risk."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "Previous Medications": [
+          "Dietary control"
+        ],
+        "Symptoms": [
+          "Fatty lumps around joints",
+          "Mild chest discomfort during exertion"
+        ],
+        "Diagnosis": [
+          "Patient diagnosed with dyslipidemia with visible xanthomas and early carotid artery plaque formation."
+        ],
+        "Medications": [
+          "Rosuvastatin"
+        ],
+        "Diet": [
+          "Low fat diet",
+          "Increase fiber intake"
+        ]
+      }
+    ]
+  }
+]
